@@ -1,0 +1,158 @@
+
+<h1 align="center">
+  <br>
+<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5e73cca6ec4fcf1309f2df86/room-content/bb0f0f9fcc9d50faf20e45ead4f46bfe.png" alt="Tools" width="200">
+  <br>
+  Red Team Operation Tools
+  <br>
+</h1>
+
+<h4 align="center">A package tools for red team operations.</h4>
+
+
+<p align="center">
+  <a href="#guides">Guides</a> •
+  <a href="#osint">OSINT</a> •
+  <a href="#recon">RECON</a> •
+  <a href="#frameworks">Frameworks</a> •
+  <a href="#command-injection">Command Injection</a> •
+  <a href="#subdomains">Subdomains</a> •
+  <a href="#webspidering">Web Spidering</a> •
+  <a href="#directory-fuzzing">Directory Fuzzing</a> •
+  <a href="#finger-print">Finger print</a> •
+  <a href="#vulnerability">Vulnerability</a> •
+</p>
+
+## Guides
+
+* [Red Team Guide](https://redteam.guide/docs/templates/roe_template/)
+* [Red Team Tools](https://github.com/A-poc/RedTeam-Tools)
+* [Blue Team Tools](https://github.com/A-poc/BlueTeam-Tools)
+* [Hack tools Chrome](https://github.com/LasCC/Hack-Tools)
+
+## RECON
+* [KingOfBugBountyTips](https://github.com/KingOfBugbounty/KingOfBugBountyTips)
+
+## Tatics and Techniques
+* [ATT*CK](https://attack.mitre.org/)
+  
+## OSINT
+
+* [OSINT Framework](https://osintframework.com/)
+* [Ifind](ifind.com/)
+* [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
+* [Shodan](https://www.shodan.io/dashboard?language=en)
+* [WayBackMachine](https://web.archive.org/)
+* [Perito Cibernetico](https://peritocibernetico.com.br/)
+* [Yandex](https://yandex.com/)
+* [Gmail OSINT](https://gmail-osint.activetk.jp/)
+* [trape](https://github.com/jofpin/trape)
+
+## Frameworks
+
+* [Jok3r](https://github.com/koutto/jok3r)
+  - Directory report:  /var/lib/docker/overlay2/7564110b79006ce12e17a7036ed8cf837cbace06b8b02c6fa450c273bf25bbe7/diff/root/jok3r/reports
+* [Sn1per](https://github.com/1N3/Sn1per)
+  - Directory report:/usr/share/sniper/loot/workspace/https:--loja.obahortifruti.com.br/osint/intodns-loja.obahortifruti.com.br.html
+* [Mythic](https://github.com/its-a-feature/Mythic.git) 
+
+
+## COMMAND INJECTION
+
+* [Commix](https://github.com/commixproject/commix.git)
+
+## SUBDOMAINS
+
+* [knock](https://github.com/guelfoweb/knock)
+* [lazyrecon](https://github.com/nahamsec/lazyrecon)
+* [subfinder](https://github.com/projectdiscovery/subfinder)
+* [assetfinder](https://github.com/tomnomnom/assetfinder)
+* [Amass](https://github.com/OWASP/Amass)
+* [subliest3r](https://github.com/aboul3la/Sublist3r)
+
+## WEBSPIDERING
+
+* [gospider](https://github.com/jaeles-project/gospider)
+* [gau](https://github.com/lc/gau)
+* [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+* [waybackurls](https://github.com/tomnomnom/waybackurls)
+* [hakrawler](https://github.com/hakluke/hakrawler)
+* [ParamSpider](https://github.com/devanshbatham/ParamSpider)
+
+## Directory Fuzzing
+
+* [ffuf](https://github.com/ffuf/ffuf)
+* [wfuzz](https://github.com/xmendez/wfuzz)
+* [gobuster](https://github.com/OJ/gobuster)
+* [DirBuster](https://github.com/KajanM/DirBuster)
+* [dirb](https://github.com/v0re/dirb)
+* [turbo search](https://github.com/helviojunior/turbosearch)
+
+## FINGERPRINT
+* [wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=pt-BR)
+* [builtwith](https://chrome.google.com/webstore/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=pt)
+* [whatweb](https://github.com/urbanadventurer/WhatWeb)
+
+## VULNERABILITY
+
+* [nuclei](https://github.com/projectdiscovery/nuclei)
+* [wpscan](https://github.com/wpscanteam/wpscan)
+* [nikto](https://github.com/sullo/nikto)
+* [owaspzap](https://www.zaproxy.org/)
+
+## SENSITIVE DATA
+
+* [intelx](https://intelx.io/)
+* [leakcheck](https://leakcheck.net/)
+* [snusbase](https://snusbase.com/)
+* [breachchecker](https://breachchecker.com/)
+* [leak lookup](https://leak-lookup.com/)
+* [we leak info](https://weleakinfo.to/)
+* [leak check](https://leakcheck.io/)
+* [scatteredsecrets](https://lnkd.in/d5X_jCp8)
+* [ghostproject](https://ghostproject.fr/)
+
+
+## PAYLOADS/WORDLISTS
+* [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+* [seclists wordlists](https://github.com/danielmiessler/SecLists)
+* [leaky-paths](https://github.com/ayoubfathi/leaky-paths)
+ 
+## SSL
+* [sslscan](https://github.com/rbsec/sslscan)
+* [sslhopper](https://www.sslshopper.com/)
+ 
+## MISC
+* [httpx](https://github.com/projectdiscovery/httpx)
+* [metasploit](https://github.com/rapid7/metasploit-framework)
+* [dnsdumpster](https://github.com/nmmapper/dnsdumpster)
+* [httprobe](https://github.com/tomnomnom/httprobe)
+* [recon-ng](https://github.com/lanmaster53/recon-ng)
+* [securitytrails](https://github.com/secops4thewin/securitytrails-python/blob/master/securitytrails.py)
+ 
+## XSS
+* [xss-Strike](https://github.com/s0md3v/XSStrike )
+* [ppmap](https://github.com/kleiton0x00/ppmap.git)
+
+## LFI/RFI
+* [kadimus](https://github.com/P0cL4bs/kadimus)
+  - requiriment: apt install libcurl4-nss-dev libpcre3-dev libssh-dev
+./kadimus -u https://www.cocamar.com.br/busca?s= -T data --parameter -c "id"
+
+## DOS
+* [slowhttptest](https://github.com/shekyan/slowhttptest.git)
+  - slowhttptest -c 500 -H -g -o ./result -i 10 -r 200 -t GET -u https://sunweb.cocamar.com.br/ -x 24 -p 2
+ 
+## CLOUD
+* [cloud brute](https://github.com/0xsha/CloudBrute)
+* [lista de tools](https://github.com/Kyuu-Ji/Awesome-Azure-Pentest)
+
+## COMUNICATTION
+* [vectro.io](http://vectr.io/)
+* [slack](https://slack.com/intl/pt-br/)
+
+## PISHING
+
+* [gophish](https://github.com/gophish/gophish)
+* [zphisher](https://github.com/htr-tech/zphisher)
+* [SocialFish](https://github.com/UndeadSec/SocialFish)
