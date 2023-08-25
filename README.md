@@ -19,8 +19,19 @@
   <a href="#subdomains">Subdomains</a> •
   <a href="#webspidering">Web Spidering</a> •
   <a href="#directory-fuzzing">Directory Fuzzing</a> •
-  <a href="#finger-print">Finger print</a> •
+  <a href="#fingerprint">Finger print</a> •
   <a href="#vulnerability">Vulnerability</a> •
+  <a href="#sensitive-data">Sensitive data</a> •
+  <a href="#payloads-e-wordlists">Payloads e wordlist</a> •
+  <a href="#ssl">SSL</a> •
+  <a href="#misc">Misc</a> •
+  <a href="#xss">XSS</a> •
+  <a href="#lfi-e-rfi">LFI/RFI</a> •
+  <a href="#dos">DOS</a> •
+  <a href="#cloud">Cloud</a> •
+  <a href="#pishing">Pishing</a> •
+  <a href="#sql-injection">SQL Injection</a> •
+  <a href="#communication">Communication</a> •
 </p>
 
 ## Guides
@@ -113,7 +124,7 @@
 * [ghostproject](https://ghostproject.fr/)
 
 
-## PAYLOADS/WORDLISTS
+## PAYLOADS E WORDLISTS
 * [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [seclists wordlists](https://github.com/danielmiessler/SecLists)
 * [leaky-paths](https://github.com/ayoubfathi/leaky-paths)
@@ -134,7 +145,7 @@
 * [xss-Strike](https://github.com/s0md3v/XSStrike )
 * [ppmap](https://github.com/kleiton0x00/ppmap.git)
 
-## LFI/RFI
+## LFI E RFI
 * [kadimus](https://github.com/P0cL4bs/kadimus)
   - requiriment: apt install libcurl4-nss-dev libpcre3-dev libssh-dev
 ./kadimus -u https://www.cocamar.com.br/busca?s= -T data --parameter -c "id"
@@ -147,12 +158,18 @@
 * [cloud brute](https://github.com/0xsha/CloudBrute)
 * [lista de tools](https://github.com/Kyuu-Ji/Awesome-Azure-Pentest)
 
-## COMUNICATTION
-* [vectro.io](http://vectr.io/)
-* [slack](https://slack.com/intl/pt-br/)
-
 ## PISHING
 
 * [gophish](https://github.com/gophish/gophish)
 * [zphisher](https://github.com/htr-tech/zphisher)
 * [SocialFish](https://github.com/UndeadSec/SocialFish)
+
+## SQL INJECTION
+
+* [sqlmap](https://github.com/sqlmapproject/sqlmap)
+
+## COMUNICATTION
+* [vectro.io](http://vectr.io/)
+* [slack](https://slack.com/intl/pt-br/)
+
+
