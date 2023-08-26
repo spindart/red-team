@@ -1,4 +1,4 @@
-## 
+
 
 
 ## Engagement Structure 
@@ -81,6 +81,7 @@ Many regulation and standardization bodies have released their cyber kill chain.
 <p align="center">
   <a href="#guides">Guides</a> •
   <a href="#osint">OSINT</a> •
+  <a href="#vulnerability-searching">Vulnerability Searching</a> •
   <a href="#recon">RECON</a> •
   <a href="#frameworks">Frameworks</a> •
   <a href="#command-injection">Command Injection</a> •
@@ -99,7 +100,7 @@ Many regulation and standardization bodies have released their cyber kill chain.
   <a href="#cloud">Cloud</a> •
   <a href="#pishing">Pishing</a> •
   <a href="#sql-injection">SQL Injection</a> •
-  <a href="#communication">Communication</a> •
+  <a href="#communication">Communication</a> 
 </p>
 
 
@@ -114,12 +115,16 @@ Many regulation and standardization bodies have released their cyber kill chain.
 * [Blue Team Tools](https://github.com/A-poc/BlueTeam-Tools)
 * [Hack tools Chrome](https://github.com/LasCC/Hack-Tools)
 
+## Vulnerability Searching
+* [ExploitDB](https://www.exploit-db.com/)
+* [NVD](https://nvd.nist.gov/vuln/search)
+* [CVE Mitre](https://cve.mitre.org/)
+  
+
 ## RECON
 * [KingOfBugBountyTips](https://github.com/KingOfBugbounty/KingOfBugBountyTips)
 
-## Tatics and Techniques
-* [ATT*CK](https://attack.mitre.org/)
-  
+
 ## OSINT
 
 * [OSINT Framework](https://osintframework.com/)
