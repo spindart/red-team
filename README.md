@@ -103,11 +103,6 @@ Many regulation and standardization bodies have released their cyber kill chain.
   <a href="#communication">Communication</a> 
 </p>
 
-
-
-
-
-
 ## Guides
 
 * [Red Team Guide](https://redteam.guide/docs/templates/roe_template/)
