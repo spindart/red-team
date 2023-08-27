@@ -119,7 +119,25 @@ Many regulation and standardization bodies have released their cyber kill chain.
 * [ExploitDB](https://www.exploit-db.com/)
 * [NVD](https://nvd.nist.gov/vuln/search)
 * [CVE Mitre](https://cve.mitre.org/)
-  
+
+Example search exploit from exploitdb on Kali using <b>searchsploit</b>
+
+In this scenario i want a exploit 2020 buffer overflow in the sudo program
+
+```bash
+searchsploit "buffer overflow sudo 2020"
+```
+this return a list of exploits encounterd in ExploitDB with these words
+
+if you look in exploitdb you will also find
+<img src="./assets/exploit-db-1.png" alt="Exploit DB">
+In it you have important information, such as the <b>CVE</b>, which is the year and number of the vulnerability 
+<img src="./assets/exploit-db-2.png" alt="Exploit DB CVE">
+In this exploit example CVE is: CVE-2019-18634
+
+You can see more details on:
+https://nvd.nist.gov/vuln/detail/CVE-2019-18634
+
 
 ## RECON
 * [KingOfBugBountyTips](https://github.com/KingOfBugbounty/KingOfBugBountyTips)
