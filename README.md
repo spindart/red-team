@@ -9,8 +9,8 @@ The blue team commonly uses cyber kill chains to map behaviors and break down an
 Many regulation and standardization bodies have released their cyber kill chain. Each kill chain follows roughly the same structure, with some going more in-depth or defining objectives differently. Below is a small list of standard cyber kill chains.</p>
 
 
-  * [Lockheed Martin Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
-  * [Unified Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+* [Lockheed Martin Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+* [Unified Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
 *  [Varonis Cyber Kill Chain](https://www.varonis.com/blog/cyber-kill-chain/)
 * [Active Directory Attack Cycle](https://www.varonis.com/blog/cyber-kill-chain/)
 * [MITRE ATT&CK Framework](https://attack.mitre.org/) 
@@ -102,6 +102,11 @@ Many regulation and standardization bodies have released their cyber kill chain.
   <a href="#sql-injection">SQL Injection</a> •
   <a href="#communication">Communication</a> 
 </p>
+
+## Folders utilities
+Google Dorking, also called Google hacking, is a search hacking technique that uses advanced search queries to reveal information hidden in Google. Google Dorks, or Google hacks, refer to specific search commands (such as special parameters and search operators) that, when entered into Google's search bar, reveal hidden parts of websites.
+
+[Dorks](./dorks/)
 
 ## Guides
 
@@ -266,4 +271,6 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 
 ## References
 
-https://tryhackme.com/
+* https://tryhackme.com/
+* Gdorks Dracul
+* All repositories and contributors on this docs.
