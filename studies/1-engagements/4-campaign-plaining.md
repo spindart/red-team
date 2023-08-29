@@ -8,7 +8,6 @@
 Checklist for campaign planning
 https://redteam.guide/docs/checklists/red-team-checklist/
 
-
 ## Credits
 
 [tryhackme.com](tryhackme.com)

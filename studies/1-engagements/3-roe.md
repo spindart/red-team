@@ -1,4 +1,3 @@
-
 ## Red Team Rules of Engagement (ROE)
 
 <p>Rules of Engagement (RoE) are a legally binding outline of the client objectives and scope with further details of engagement expectations between both parties. This is the first "official" document in the engagement planning process and requires proper authorization between the client and the red team.</p>
@@ -9,10 +8,9 @@
 
 Example of RoE in this file [GlobalEnterprisesRoE](./assets/roe/GlobalEnterprisesRoE.pdf)
 
-
 You can see more about RoE Template in [readteam.guide](https://redteam.guide/docs/templates/roe_template/)
 
 ## Credits
 
-* http://tryhackme.com
-* http://readteam.guide
+- http://tryhackme.com
+- http://readteam.guide

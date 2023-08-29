@@ -1,15 +1,14 @@
-##  Defining Scope and Objectives
+## Defining Scope and Objectives
+
 Engagements can be very complex and bureaucratic. The key to a successful engagement is clearly defined client objectives or goals. Client objectives should be discussed between the client and red team to create a mutual understanding between both parties of what is expected and provided. Set objectives are the basis for the rest of the engagement documentation and planning.
 
 Without clear and concrete objectives and expectations, you are preparing for a very unstructured and unplanned campaign. Objectives set the tone for the rest of the engagement.
 
 When assessing a client's objectives and planning the engagement details, you will often need to decide how focused the assessment is.
 
-
-
 Below is an example of the client objectives of a mature organization with a strong security posture.
 
-###  Example 1 - Global Enterprises:
+### Example 1 - Global Enterprises:
 
 <b>Objectives:</b>
 
@@ -27,7 +26,7 @@ Below is an example of the client objectives of a mature organization with a str
     </ol>
     <li>Use of white cards is permitted depending on downtime and length.</li>
      <li>Evaluate the impact of data exposure and exfiltration.</li>
-</ol> 
+</ol>
 
 <b>Scope:</b>
 
@@ -46,4 +45,4 @@ Below is an example of the client objectives of a mature organization with a str
       <li>All interaction with "*.globalenterprises.thm" is permitted.</li>
   </ol>
   </li>
-</ol> 
+</ol>
