@@ -15,7 +15,7 @@ through this command you get the manual to understand commands and how to use th
 
 ## Interacting With the Filesystem
 
-Basic commands to intract with the filesystem
+Basic commands to interact with the filesystem
 
 <table class="table table-bordered"><tbody><tr><td>Command</td><td>Full Name</td></tr><tr><td>ls</td><td>listing</td></tr><tr><td>cd</td><td>change directory</td></tr><tr><td>cat</td><td style="text-align:center">concatenate</td></tr><tr><td>pwd</td><td>print working directory</td></tr></tbody></table>
 <br><br>
