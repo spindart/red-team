@@ -20,6 +20,51 @@ Basic commands to intract with the filesystem
 <table class="table table-bordered"><tbody><tr><td>Command</td><td>Full Name</td></tr><tr><td>ls</td><td>listing</td></tr><tr><td>cd</td><td>change directory</td></tr><tr><td>cat</td><td style="text-align:center">concatenate</td></tr><tr><td>pwd</td><td>print working directory</td></tr></tbody></table>
 <br><br>
 
+## An Introduction to Shell Operators
+
+<table><tbody><tr><td>Symbol / Operator</td><td>Description</td></tr><tr><td>&amp;</td><td>This operator allows you to run commands in the background of your terminal.</td></tr><tr><td>&amp;&amp;</td><td>This operator allows you to combine multiple commands together in one line of your terminal.</td></tr><tr><td>&gt;</td><td>This operator is a redirector - meaning that we can take the output from a command (such as using cat to output a file) and direct it elsewhere.</td></tr><tr><td>&gt;&gt;</td><td><p>This operator does the same function of the <code>&gt;</code> operator but appends the output rather than replacing (meaning nothing is overwritten).</p></td></tr></tbody></table>
+
+### Operator "&"
+This operator allows us to execute commands in the background. For example, let's say we want to copy a large file. This will obviously take quite a long time and will leave us unable to do anything else until the file successfully copies.
+
+The "&" shell operator allows us to execute a command and have it run in the background (such as this file copy) allowing us to do other things!
+
+### Operator "&&"
+This shell operator is a bit misleading in the sense of how familiar is to its partner "&". Unlike the "&" operator, we can use "&&" to make a list of commands to run for example command1 && command2. However, it's worth noting that command2 will only run if command1 was successful.
+
+### Operator ">"
+This operator is what's known as an output redirector. What this essentially means is that we take the output from a command we run and send that output to somewhere else.
+
+<b>Example</b>
+
+```bash
+echo hey > welcome.txt
+```
+
+### Operator ">>"
+This operator is also an output redirector like in the previous operator (>) we discussed. However, what makes this operator different is that rather than overwriting any contents within a file, for example, it instead just puts the output at the end.
+
+Following on with our previous example where we have the file "welcome" that has the contents of "hey". If were to use echo to add "hello" to the file using the > operator, the file will now only have "hello" and not "hey".
+
+The >> operator allows to append the output to the bottom of the file
+
+```bash
+echo hello >> welcome.txt
+```
+
+```bash
+echo cat welcome.txt
+```
+
+OUTPUT:
+
+hey<br>
+hello
+
+
+
+<hr>
+
 <h1> A-Z commands</h1>
 
 
@@ -139,6 +184,18 @@ The file command gives you various information about a file in Linux. This inclu
 
 One of the frequent used commands. The find command can be used to looks for files based on their name, type, modification time and more. Combine it with the likes of exec or xargs command and you have a powerful tool at your hand for searching and modifying files.
 
+<b>examples:</b>
+
+Using "find" to find a file with the name of "passwords.txt"
+```bash
+find -name passwords.txt
+```
+
+Using "find" to find any file with the extension of ".txt"
+```bash
+ find -name *.txt
+```
+
 <b>findmnt</b>
 
 Another lesser know command which is used for checking if a file system is mounted.
@@ -160,6 +217,25 @@ The fsck (file system check) command helps with a potentially corrupted filesyst
 <b>grep</b>
 
 Find command works on file name. The grep command is used to find patterns inside file content.
+
+Using "grep" to find any entries with the text joy in "passwords.txt"
+
+```bash
+grep "joy" passwords.txt
+```
+
+Using "grep" to find any entries with the "THM"  in "access.log"
+
+```bash
+grep "THM" access.log
+```
+
+Using "grep" to find any entries with the IP address of "3.18.18.132" in "access.log"
+
+```bash
+grep 3.18.18.132 access.log
+```
+
 <b>groupadd</b>
 
 The groupadd command in Linux creates new groups
@@ -457,6 +533,19 @@ Watch is a great utility that automatically refreshes data. Some of the more com
 <b>wc</b>
 
 The wc command displays statistical information about a file such as the number of lines, words, characters.
+
+<b>Examples</b>
+
+Using "wc" to count the number of entries in "access.log"
+
+```bash
+wc -l access.log
+```
+Using "wc" to count the number of entries in "passwords.txt"
+
+```bash
+wc -l passwords.txt
+```
 
 <b>which</b>
 
