@@ -29,7 +29,9 @@
   <a href="#cloud">Cloud</a> •
   <a href="#pishing">Pishing</a> •
   <a href="#sql-injection">SQL Injection</a> •
-  <a href="#communication">Communication</a> 
+  <a href="#communication">Communication</a> •
+  <a href="#network-mapping">Network mapping</a>   •
+  <a href="#others">Others</a> 
 </p>
 
 ## Guides
@@ -71,6 +73,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 ## OSINT
 
 - [OSINT Framework](https://osintframework.com/)
+- [theHarvester](https://github.com/laramies/theHarvester)
 - [Ifind](ifind.com/)
 - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
 - [Shodan](https://www.shodan.io/dashboard?language=en)
@@ -201,6 +204,9 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 - [vectro.io](http://vectr.io/)
 - [slack](https://slack.com/intl/pt-br/)
   
+## NETWORK MAPPING
+
+- [nmap](https://github.com/nmap/nmap)
 
 ## OTHERS
 
