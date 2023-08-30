@@ -46,3 +46,5 @@ Below is an example of the client objectives of a mature organization with a str
   </ol>
   </li>
 </ol>
+<br>
+<a href="./3-roe.md">>> Rules of Engagement</a>

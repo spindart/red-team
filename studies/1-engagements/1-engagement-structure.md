@@ -64,3 +64,5 @@ Many regulation and standardization bodies have released their cyber kill chain.
 
 <img src="assets/engagement-structure.png" alt="Tools" width="600">
 </h1>
+<br>
+<a href="./2-defining-scope-and-structure.md">>> Defining Scope and Structure</a>

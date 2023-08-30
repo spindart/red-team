@@ -14,3 +14,10 @@ You can see more about RoE Template in [readteam.guide](https://redteam.guide/do
 
 - http://tryhackme.com
 - http://readteam.guide
+
+
+<br>
+<a href="./4-campaign-plaining.md">>> Campaign Plaining</a>
+
+
+
