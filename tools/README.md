@@ -199,6 +199,12 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 
 - [vectro.io](http://vectr.io/)
 - [slack](https://slack.com/intl/pt-br/)
+  
+
+## OTHERS
+
+- [haveibeenpwned](https://haveibeenpwned.com/)
+- [CMD Commands for hacking](https://cmdwindows.com/cmd-commands-for-hacking)
 
 ## References
 
