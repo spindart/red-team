@@ -94,6 +94,13 @@ nslookup to get more info about dns servers from a domain
 ```bash
 sudo nslookup devsemfronteiras.tech
 ```
+
+Checks or domain in search of common subdomains using a list of internal or external words
+
+```bash
+sudo dnsmap devsemfronteiras.tech
+```
+
 host to get more info about DNS resolutions
 ```bash
 sudo host devsemfronteiras.tech
