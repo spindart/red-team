@@ -11,7 +11,7 @@
   <a href="#guides">Guides</a> •
   <a href="#osint">OSINT</a> •
   <a href="#vulnerability-searching">Vulnerability Searching</a> •
-  <a href="#recon">RECON</a> •
+  <a href="#bug-bounty">Bug Bounty</a> •
   <a href="#frameworks">Frameworks</a> •
   <a href="#command-injection">Command Injection</a> •
   <a href="#subdomains">Subdomains</a> •
@@ -64,7 +64,7 @@ In this exploit example CVE is: CVE-2019-18634
 You can see more details on:
 https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 
-## RECON
+## BUG BOUNTY
 
 - [KingOfBugBountyTips](https://github.com/KingOfBugbounty/KingOfBugBountyTips)
 
@@ -79,6 +79,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 - [Yandex](https://yandex.com/)
 - [Gmail OSINT](https://gmail-osint.activetk.jp/)
 - [trape](https://github.com/jofpin/trape)
+- [who.is](https://who.is/)
 
 ## Frameworks
 
