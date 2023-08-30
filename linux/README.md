@@ -29,8 +29,18 @@ This operator allows us to execute commands in the background. For example, let'
 
 The "&" shell operator allows us to execute a command and have it run in the background (such as this file copy) allowing us to do other things!
 
+```bash
+sleep 10 & sudo apt update
+```
+
 ### Operator "&&"
 This shell operator is a bit misleading in the sense of how familiar is to its partner "&". Unlike the "&" operator, we can use "&&" to make a list of commands to run for example command1 && command2. However, it's worth noting that command2 will only run if command1 was successful.
+
+<b>Example</b>
+
+```bash
+mkdir my_directory && cd my_directory
+```
 
 ### Operator ">"
 This operator is what's known as an output redirector. What this essentially means is that we take the output from a command we run and send that output to somewhere else.
