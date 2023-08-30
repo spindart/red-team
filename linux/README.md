@@ -9,9 +9,19 @@
 <img src="./assets/linux.png" alt="Tools" width="200">
 </h1>
 
-
 The most important command in Linux terminal is <strong><a href="#man">man</a></strong>, record this! 
 through this command you get the manual to understand commands and how to use them
+
+
+## Interacting With the Filesystem
+
+Basic commands to intract with the filesystem
+
+<table class="table table-bordered"><tbody><tr><td>Command</td><td>Full Name</td></tr><tr><td>ls</td><td>listing</td></tr><tr><td>cd</td><td>change directory</td></tr><tr><td>cat</td><td style="text-align:center">concatenate</td></tr><tr><td>pwd</td><td>print working directory</td></tr></tbody></table>
+<br><br>
+
+<h1> A-Z commands</h1>
+
 
 ## A
 
