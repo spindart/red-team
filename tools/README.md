@@ -83,6 +83,56 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-18634
 - [Gmail OSINT](https://gmail-osint.activetk.jp/)
 - [trape](https://github.com/jofpin/trape)
 - [who.is](https://who.is/)
+  
+Basic Example to  SCAN website using who.is and anothers tools
+
+```bash
+sudo whois devsemfronteiras.tech
+```
+nslookup to get more info about dns servers from a domain
+
+```bash
+sudo nslookup devsemfronteiras.tech
+```
+host to get more info about DNS resolutions
+```bash
+sudo host devsemfronteiras.tech
+```
+
+tracerout trace path, hops, and delays in networks to destination.. 
+
+```bash
+sudo traceroute devsemfronteiras.tech
+```
+WhatWeb: Identify tech used by website (CMS, frameworks)
+```bash
+sudo whatweb devsemfronteiras.tech
+```
+or
+
+For more informations
+```bash
+sudo whatweb -a 3  devsemfronteiras.tech --no-errors
+```
+
+Using dirb for web directory brute-forcing tool to find hidden files/folders.
+
+```bash
+sudo dirb http://devsemfronteiras.tech -f
+```
+
+Using the harvester to extract emails, domains, info from public sources for reconnaissance.
+
+```bash
+sudo theHarvester -d devsemfronteiras.tech -b all
+```
+
+Nmap for discovering hosts, services, vulnerabilities.
+
+```bash
+sudo nmap -v -A devsemfronteiras.tech
+```
+
 
 ## Frameworks
 
