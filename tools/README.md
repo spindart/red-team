@@ -262,6 +262,7 @@ sudo nmap -v -A devsemfronteiras.tech
 
 - [haveibeenpwned](https://haveibeenpwned.com/)
 - [CMD Commands for hacking](https://cmdwindows.com/cmd-commands-for-hacking)
+- [Hackmageddon](https://www.hackmageddon.com/)
 
 ## References
 
