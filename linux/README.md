@@ -9,7 +9,7 @@
 <img src="./assets/linux.png" alt="Tools" width="200">
 </h1>
 
-The most important command in Linux terminal is <strong><a href="#man">man</a></strong>, record this! 
+The most important command in Linux terminal is <strong><a href="#man">man(ual)</a></strong>, record this! 
 through this command you get the manual to understand commands and how to use them
 
 
@@ -17,10 +17,25 @@ through this command you get the manual to understand commands and how to use th
 
 Basic commands to interact with the filesystem
 
-<table class="table table-bordered"><tbody><tr><td>Command</td><td>Full Name</td></tr><tr><td>ls</td><td>listing</td></tr><tr><td>cd</td><td>change directory</td></tr><tr><td>cat</td><td style="text-align:center">concatenate</td></tr><tr><td>pwd</td><td>print working directory</td></tr></tbody></table>
-<br><br>
-
-<table><tbody><tr><td>Command</td><td>Full Name</td><td>Purpose</td></tr><tr><td>touch</td><td>touch</td><td>Create file</td></tr><tr><td>mkdir</td><td>make directory</td><td>Create a folder</td></tr><tr><td>cp</td><td>copy</td><td>Copy a file or folder</td></tr><tr><td>mv</td><td>move</td><td>Move a file or folder</td></tr><tr><td>rm</td><td>remove</td><td>Remove a file or folder</td></tr><tr><td>file</td><td>file</td><td>Determine the type of a file</td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>Command</td>
+<td>Full Name</td>
+<td>Purpose</td>
+</tr>
+<tr><td>ls</td><td>listing</td><td>List files/directories.</td></tr>
+<tr><td>cd</td><td>change directory</td><td>Change current directory.</td></tr>
+<tr><td>cat</td><td>concatenate</td><td>Display file contents.</td></tr>
+<tr><td>pwd</td><td>print working directory</td><td>Display Current Directory</td></tr>
+<tr><td>touch</td><td>touch</td><td>Create file</td></tr>
+<tr><td>mkdir</td><td>make directory</td><td>Create a folder</td></tr>
+<tr><td>cp</td><td>copy</td><td>Copy a file or folder</td></tr>
+<tr><td>mv</td><td>move</td><td>Move a file or folder</td></tr>
+<tr><td>rm</td><td>remove</td><td>Remove a file or folder</td></tr>
+<tr><td>file</td><td>file</td><td>Determine the type of a file</td></tr>
+</tbody>
+</table>
 
 ## An Introduction to Shell Operators
 
