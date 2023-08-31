@@ -375,7 +375,7 @@ Navigation within the manual pages is done using the keys:
 <li><b>PageDown</b> or <b>f</b> Scrolls 25 lines down;</li>
  <li><b>PageUP</b> or <b>w</b> Scrolls 25 lines up;</li>
   <li><b>ArrowUp</b> or <b>k</b> Rolls 1 line up; </li>
-  <li><b>ArrowDown<b> or <b>e</b> Scrolls 1 line down;</li>
+  <li><b>ArrowDown</b> or <b>e</b> Scrolls 1 line down;</li>
    <li><b>r</b> Redraws the screen (refresh); </li>
    <li><b>p or </b>g</b> Top of page; h Help on man page options;</li>
     <li><b>s</b> Saves the man page in text format to the specified file.</li>
