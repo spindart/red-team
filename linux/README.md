@@ -20,6 +20,8 @@ Basic commands to interact with the filesystem
 <table class="table table-bordered"><tbody><tr><td>Command</td><td>Full Name</td></tr><tr><td>ls</td><td>listing</td></tr><tr><td>cd</td><td>change directory</td></tr><tr><td>cat</td><td style="text-align:center">concatenate</td></tr><tr><td>pwd</td><td>print working directory</td></tr></tbody></table>
 <br><br>
 
+<table><tbody><tr><td>Command</td><td>Full Name</td><td>Purpose</td></tr><tr><td>touch</td><td>touch</td><td>Create file</td></tr><tr><td>mkdir</td><td>make directory</td><td>Create a folder</td></tr><tr><td>cp</td><td>copy</td><td>Copy a file or folder</td></tr><tr><td>mv</td><td>move</td><td>Move a file or folder</td></tr><tr><td>rm</td><td>remove</td><td>Remove a file or folder</td></tr><tr><td>file</td><td>file</td><td>Determine the type of a file</td></tr></tbody></table>
+
 ## An Introduction to Shell Operators
 
 <table><tbody><tr><td>Symbol / Operator</td><td>Description</td></tr><tr><td>&amp;</td><td>This operator allows you to run commands in the background of your terminal.</td></tr><tr><td>&amp;&amp;</td><td>This operator allows you to combine multiple commands together in one line of your terminal.</td></tr><tr><td>&gt;</td><td>This operator is a redirector - meaning that we can take the output from a command (such as using cat to output a file) and direct it elsewhere.</td></tr><tr><td>&gt;&gt;</td><td><p>This operator does the same function of the <code>&gt;</code> operator but appends the output rather than replacing (meaning nothing is overwritten).</p></td></tr></tbody></table>
