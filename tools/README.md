@@ -154,6 +154,7 @@ sudo nmap -v -A devsemfronteiras.tech
 - [Commix](https://github.com/commixproject/commix.git)
 
 ## SUBDOMAINS
+- [maltego](https://www.maltego.com/)
 - [recon-ng](https://github.com/lanmaster53/recon-ng)
 - [knock](https://github.com/guelfoweb/knock)
 - [lazyrecon](https://github.com/nahamsec/lazyrecon)
