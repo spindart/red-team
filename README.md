@@ -26,7 +26,7 @@
 
 ## Linux
 <ol>
- <li><a href="./linux/">Linux Essentials</a> </li>
+ <li><a href="./linux_essentials//">Linux Essentials</a> </li>
 </ol>
 
 
