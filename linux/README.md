@@ -88,6 +88,110 @@ OUTPUT:
 hey<br>
 hello
 
+## SSH
+
+<b>What is SSH & how Does it Work?</b>
+
+<p><b>Secure Shell</b> or <b>SSH</b> simply is a protocol between devices in an encrypted form. Using cryptography, any input we send in a human-readable format is encrypted for travelling over a network -- where it is then unencrypted once it reaches the remote machine, such as in the diagram below.</p>
+
+<img src="./assets/ssh.png" width="600">
+
+<p>SSH allows us to remotely execute commands on another device remotely.</p>
+<p>Any data sent between the devices is encrypted when it is sent over a network such as the Internet</p>
+
+<b>Construct command to log in to the remote machine using ssh</b>
+
+<b>ssh</b> and then the <b>username</b> of the account, <b>@</b>the IP address of the machine
+
+<b>For example:</b>
+```
+ssh linuxuser@10.10.224.148
+```
+That is:
+
+ssh username_account@MACHINE_IP
+
+## Permissions 101
+
+
+Using ls -lh to list the permissions of all files in the directory
+
+<b>exampĺe ls -l to show permissions of file and group</b>
+
+```bash
+ls -lh
+
+output:
+
+-rw-r--r-- 1 cmnatic cmnatic 0 Feb 19 10:37 file1
+-rw-r--r-- 8 cmnatic cmnatic 0 Feb 19 10:37 file2
+```
+
+ <b>Using su to switch to another user interactively </b>
+```bash
+su -l user2
+```
+Where now, after using <b>-l</b>, our new session has dropped us into the home directory of "user" automatically. 
+
+in this case: /home/user2
+
+
+## Common Directories 
+
+<b>/etc</b>
+
+This root directory is one of the most important root directories on your system. The etc folder (short for etcetera) is a commonplace location to store system files that are used by your operating system. 
+
+For example, the sudoers file highlighted in the screenshot below contains a list of the users & groups that have permission to run sudo or a set of commands as the root user.
+
+Also highlighted below are the "passwd" and "shadow" files. These two files are special for Linux as they show how your system stores the passwords for each user in encrypted formatting called sha512.
+
+
+<b>Some notable contents of the /etc directory</b>
+
+```bash
+root@linux2:/etc$ ls
+shadow passwd sudoers sudoers.d
+```
+
+<b>/var</b>
+
+The "/var" directory, with "var" being short for variable data,  is one of the main root folders found on a Linux install. This folder stores data that is frequently accessed or written by services or applications running on the system. For example, log files from running services and applications are written here (/var/log), or other data that is not necessarily associated with a specific user (i.e., databases and the like).
+
+
+<b>Some notable contents of the /var directory</b>
+
+
+```bash
+root@linux2:/var$ ls
+backups log opt tmp
+```
+<b>
+/root</b>
+
+Unlike the /home directory, the /root folder is actually the home for the "root" system user. There isn't anything more to this folder other than just understanding that this is the home directory for the "root" user. But, it is worth a mention as the logical presumption is that this user would have their data in a directory such as "/home/root" by default.  
+
+<b> Some notable contents of the /root directory </b>
+
+```bash
+root@linux2:~# ls
+myfile myfolder passwords.xlsx
+```
+        
+
+<b>/tmp</b>
+This is a unique root directory found on a Linux install. Short for <b>"temporary"</b>, the /tmp directory is volatile and is used to store data that is only needed to be accessed once or twice. Similar to the memory on your computer, once the computer is restarted, the contents of this folder are cleared out.
+
+<b>What's useful for us in pentesting is that any user can write to this folder by default. Meaning once we have access to a machine, it serves as a good place to store things like our enumeration scripts.</b>
+
+
+ <b>Some notable contents of the /tmp directory </b>
+
+```bash
+root@linux2:/tmp# ls
+todelete trash.txt rubbish.bin
+```
+        
 
 
 <hr>
