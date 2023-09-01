@@ -691,6 +691,10 @@ The who command in Linux lists all logged-in users on the system.
 whoami is a Unix command that allows you to show the current user of the system, even if you have permissions added with su.
 
 
+See distros Linux in https://distrowatch.com/
+
+
+
 ## References
 
 * https://linuxhandbook.com/a-to-z-linux-commands/
