@@ -31,6 +31,7 @@
   <a href="#sql-injection">SQL Injection</a> •
   <a href="#communication">Communication</a> •
   <a href="#network-mapping">Network mapping</a>   •
+  <a href="#social-engineer">Social Engineer</a>   •
   <a href="#others">Others</a> 
 </p>
 
@@ -265,6 +266,10 @@ sudo nmap -v -A devsemfronteiras.tech
 ## NETWORK MAPPING
 
 - [nmap](https://github.com/nmap/nmap)
+
+## SOCIAL ENGINEER 
+
+- [The Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit)
 
 ## OTHERS
 
