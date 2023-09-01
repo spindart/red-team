@@ -116,7 +116,7 @@ ssh username_account@MACHINE_IP
 
 Using ls -lh to list the permissions of all files in the directory
 
-<b>exampĺe ls -l to show permissions of file and group</b>
+<b>exampĺe ls -l to show permissions of file, user and group</b>
 
 ```bash
 ls -lh
@@ -695,3 +695,4 @@ whoami is a Unix command that allows you to show the current user of the system,
 
 * https://linuxhandbook.com/a-to-z-linux-commands/
 * https://www.certificacaolinux.com.br/comando-linux-man/
+* http://tryhackme.com/
