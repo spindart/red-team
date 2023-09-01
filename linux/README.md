@@ -4,7 +4,7 @@
 
 <h1 align="center">
 <br>
-  Linux commands
+  Linux Fundamentals
   <br>
 <img src="./assets/linux.png" alt="Tools" width="200">
 </h1>
