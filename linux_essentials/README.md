@@ -291,6 +291,56 @@ OUTPUT: Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.
 
 
+## Processes 101 
+
+Processes are the programs that are running on your machine. They are managed by the kernel, where each process will have an ID associated with it, also known as its PID. The PID increments for the order In which the process starts. I.e. the 60th process will have a PID of 60.
+
+### Viewing Processes
+
+We can use the friendly `ps` command to provide a list of the running processes as our user's session and some additional information such as its status code, the session that is running it, how much usage time of the CPU it is using, and the name of the actual program or command that is being executed.
+
+To see the processes run by other users and those that don't run from a session (i.e. system processes), we need to provide aux to the ps command like so:  `ps aux`
+
+Another very useful command is the top command; `top` gives you real-time statistics about the processes running on your system instead of a one-time view. These statistics will refresh every 10 seconds, but will also refresh when you use the arrow keys to browse the various rows. Another great command to gain insight into your system is via the `top` command
+
+### Managing Processes
+
+You can send signals that terminate processes; there are a variety of types of signals that correlate to exactly how "cleanly" the process is dealt with by the kernel. To `kill` a command, we can use the appropriately named kill command and the associated PID that we wish to kill. i.e., to kill PID 1337, we'd use `kill 1337`.
+
+Below are some of the signals that we can send to a process when it is killed:
+ - SIGTERM - Kill the process, but allow it to do some cleanup tasks beforehand
+ - SIGKILL - Kill the process - doesn't do any cleanup after the fact
+ - SIGSTOP - Stop/suspend a process
+
+### How do Processes Start?
+
+Let's start off by talking about namespaces. The Operating System (OS) uses namespaces to ultimately split up the resources available on the computer to (such as CPU, RAM and priority) processes. Think of it as splitting your computer up into slices -- similar to a cake. Processes within that slice will have access to a certain amount of computing power, however, it will be a small portion of what is actually available to every process overall.
+
+Namespaces are great for security as it is a way of isolating processes from another -- only those that are in the same namespace will be able to see each other.
+
+We previously talked about how PID works, and this is where it comes into play. The process with an ID of 0 is a process that is started when the system boots. This process is the system's init on Ubuntu, such as systemd, which is used to provide a way of managing a user's processes and sits in between the operating system and the user. 
+
+For example, once a system boots and it initialises, systemd is one of the first processes that are started. Any program or piece of software that we want to start will start as what's known as a child process of systemd. This means that it is controlled by systemd, but will run as its own process (although sharing the resources from systemd) to make it easier for us to identify and the likes.
+
+<img src="./assets/process1.png" width="600">
+
+### Getting Processes/Services to Start on Boot
+
+ome applications can be started on the boot of the system that we own. For example, web servers, database servers or file transfer servers. This software is often critical and is often told to start during the boot-up of the system by administrators.
+
+In this example, we're going to be telling the apache web server to be starting apache manually and then telling the system to launch apache2 on boot.
+
+Enter the use of `systemctl` -- this command allows us to interact with the systemd process/daemon. Continuing on with our example, systemctl is an easy to use command that takes the following formatting: `systemctl [option] [service]`
+
+For example, to tell apache to start up, we'll use `systemctl start apache2`. Seems simple enough, right? Same with if we wanted to stop apache, we'd just replace the `[option]` with stop (instead of start like we provided)
+
+We can do four options with `systemctl`:
+
+- Start
+- Stop
+- Enable
+- Disable
+
 
 <Br><br>
 
