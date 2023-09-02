@@ -191,12 +191,113 @@ This is a unique root directory found on a Linux install. Short for <b>"temporar
 root@linux2:/tmp# ls
 todelete trash.txt rubbish.bin
 ```
-        
+
+### Terminal text editors
+
+`nano` filename
+
+where `^` = Ctrl
+
+You can navigate each line using "Up" and "Down" arrow keys to start a new line using the "Enter"
+
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
+^X Exit        ^R Read File   ^\ Replace     ^U Paste Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text
+<hr>
+
+`vi` filename
+
+Basic commands cheat-sheet on https://www.thegeekdiary.com/basic-vi-commands-cheat-sheet/
+
+<HR>
+
+`vim` filename
+
+VIM is a much more advanced text editor. Whilst you're not expected to know all advanced features, it's helpful to mention it for powering up your Linux skills.
+
+To go to insertion mode (write on a file) key press `i` 
+
+to leave insertion mode press "ESC"
+
+`:q`  quit
+
+`:wq` write and quit
+
+`q!` quit without saving
+
+`:help` help command to usage vim
+
+Some of VIM's benefits, albeit taking a much longer time to become familiar with, includes:
+<ul>
+<li>Customisable - you can modify the keyboard shortcuts to be of your choosing</li>
+<li>Syntax Highlighting - this is useful if you are writing or maintaining code, making it a popular choice for software developers</li>
+<li>VIM works on all terminals where nano may not be installed</li>
+<li>There are a lot of resources such as <a href="https://vim.rtorr.com/">cheatsheets</a>, tutorials, and the sorts available to you use.</li>
+</ul>
 
 
 <hr>
 
-<h1> A-Z commands</h1>
+
+## General/Useful Utilities 
+
+
+`wget` url 
+
+This command allows us to download files from the web via HTTP -- as if you were accessing the file in your browser. We simply need to provide the address of the resource that we wish to download. 
+
+<h3>Transferring Files From Your Host - SCP (SSH)</h3>
+
+Secure copy, or SCP, is just that -- a means of securely copying files. Unlike the regular cp command, this command allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption.
+
+Working on a model of SOURCE and DESTINATION, <b>SCP</b> allows you to:
+
+- Copy files & directories from your current system to a remote system
+- Copy files & directories from a remote system to your current system
+
+Provided that we know usernames and passwords for a user on your current system and a user on the remote system. For example, let's copy an example file from our machine to a remote machine, which I have neatly laid out in the table below:
+
+<table><tbody><tr><td>Variable</td><td>Value</td></tr><tr><td>The IP address of the remote system&nbsp;</td><td>192.168.1.30</td></tr><tr><td>User on the remote system</td><td>ubuntu</td></tr><tr><td>Name of the file on the local system</td><td>important.txt</td></tr><tr><td>Name that we wish to store the file as on the remote system</td><td>transferred.txt</td></tr></tbody></table>
+
+With this information, let's craft our scp command (remembering that the format of SCP is just <b>SOURCE</b> and <b>DESTINATION</b>)
+
+```bash
+scp important.txt ubuntu@192.168.1.40:/home/ubuntu/transferred.txt
+```
+
+And now let's reverse this and layout the syntax for using scp to copy a file from a remote computer that we're not logged into 
+
+<table><tbody><tr><td>Variable</td><td>Value</td></tr><tr><td>IP address of the remote system</td><td>192.168.1.30</td></tr><tr><td>User on the remote system</td><td>ubuntu</td></tr><tr><td>Name of the file on the remote system</td><td>documents.txt</td></tr><tr><td>Name that we wish to store the file as on our system</td><td>notes.txt</td></tr></tbody></table>
+
+The command will now look like the following: 
+
+```bash
+scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt 
+```
+
+<h3>Serving Files From Your Host - WEB</h3>
+
+Ubuntu machines come pre-packaged with python3. Python helpfully provides a lightweight and easy-to-use module called "HTTPServer". This module turns your computer into a quick and easy web server that you can use to serve your own files, where they can then be downloaded by another computing using commands such as `curl` and `wget`. 
+
+Python3's "HTTPServer" will serve the files in the directory that you run the command, but this can be changed by providing options that can be found in the manual pages. Simply, all we need to do is run `python3 -m  http.server` to start the module! In the screenshot below, we are serving from a directory called "webserver", which has a single named "file".
+
+Example:
+
+`cd /tmp`
+
+`python3 -m http.server`
+
+OUTPUT: Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.
+
+
+
+<Br><br>
+
+
+
+
+# A-Z commands
 
 
 ## A
