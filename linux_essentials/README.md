@@ -273,11 +273,6 @@ This command uploads a local file to a remote server using a POST request with t
 
 `curl -F "file=@/path/to/localfile.txt" https://example.com/upload`
 
-
-
-
-
-
 <h3>wget</h3>
 
 Downloading a File:
