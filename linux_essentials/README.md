@@ -404,6 +404,57 @@ Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.
 
 See too  <a href="https://github.com/sc0tfree/updog">Updog</a>, is a replacement for Python's SimpleHTTPServer. It allows uploading and downloading via HTTP/S, can set ad hoc SSL certificates and use http basic auth. 
 
+### Install Debian package
+
+<b>Remember: you must be in the file directory, do this using the `cd` command</b>
+
+`sudo dpkg -i filename.deb`
+
+If the package has unmet dependencies, you may see an error. You can use the following command to resolve these dependencies:
+
+`sudo apt --fix-broken install`
+
+Using apt (for local or remote installation with dependency resolution):
+
+`sudo apt install ./filename.deb`
+
+###  Extract tar files
+
+<b>Remember: you must be in the file directory, do this using the `cd` command</b>
+
+To extract a .tar file:
+
+`tar -xvf filename.tar`
+
+To extract a .tar.gz (gzip-compressed) file:
+
+`tar -xzvf filename.tar.gz`
+
+To extract a .tar.bz2 (bzip2-compressed) file:
+
+`tar -xjvf filename.tar.bz2`
+
+To extract a .tar.xz (xz-compressed) file:
+
+`tar -xJvf filename.tar.xz`
+
+Explanation of the options used with tar:
+
+- `-x`: Extract files from the archive.
+- `-v`: Verbose mode (optional, displays extracted file names).
+- `-f`: Specifies the archive file to be extracted.
+- `-z`: Used when dealing with .tar.gz files to handle gzip compression.
+- `-j`: Used when dealing with .tar.bz2 files to handle bzip2 compression.
+- `-J`: Used when dealing with .tar.xz files to handle xz compression.
+
+Replace filename.tar, filename.tar.gz, filename.tar.bz2, or filename.tar.xz with the actual name of your tar archive file.
+
+After running the appropriate tar command, the files and directories contained within the archive will be extracted to the current directory or the directory specified in the archive, depending on how the archive was created.
+
+
+
+
+
 # Processes 101 
 
 <b>PID</b> = In the context of operating systems, PID stands for Process ID. It is a unique identifier assigned to each running process in a system. PIDs are usually assigned in sequential order as processes are created, but can be recycled once a process has completed and terminated. 
@@ -1017,6 +1068,79 @@ The who command in Linux lists all logged-in users on the system.
 whoami is a Unix command that allows you to show the current user of the system, even if you have permissions added with su.
 
 See distros Linux in https://distrowatch.com/
+
+
+# Resume fundamentals commands linux
+
+<b>File and Directory Operations:</b>
+ - ls: List files and directories in the current directory.
+ - cd: Change the current directory.
+ - pwd: Print the current working directory.
+ - touch: Create an empty file.
+ - mkdir: Create a new directory.
+ - rm: Remove files or directories.
+ - cp: Copy files or directories.
+ - mv: Move or rename files or directories.
+ - find: Search for files and directories.
+ - grep: Search for text within files.
+ - cat: Display the contents of a file.
+ - more or less: View the contents of a file page by page.
+ - head and tail: Display the beginning or end of a file.
+ - chmod: Change file permissions.
+ - chown: Change file ownership.
+
+<b>Text Editing:</b>
+ - nano, vim, emacs: Text editors for creating and editing files.
+
+<b>System Information:</b>
+ - uname: Display system information.
+ - top or htop: Monitor system resource usage.
+ - free: Display memory usage.
+ - df: Show disk space usage.
+ - du: Show directory space usage.
+
+<b>Process Management:</b>
+ - ps: List running processes.
+ - kill: Terminate processes.
+ - killall: Terminate processes by name.
+ - bg and fg: Run processes in the background or foreground.
+ - nohup: Run a command that continues to run even after you log out.
+
+<b>Package Management:</b>
+
+ - apt-get (Debian/Ubuntu) or yum (Red Hat/CentOS): Install, update, and manage software packages.
+
+<b>Networking:</b>
+ - ifconfig or ip: Display network interface information.
+ - ping: Send ICMP echo requests to a host.
+ - netstat or ss: Display network connections and statistics.
+ - ssh: Securely connect to remote machines.
+ - scp: Securely copy files between hosts.
+ - curl or wget: Download files from the internet.
+ - nc (netcat): Network utility for reading/writing data across network connections.
+
+<b>User and Group Management:</b>
+ - useradd, userdel: Add or delete users.
+ - passwd: Change user passwords.
+ - groupadd, groupdel: Add or delete groups.
+ - sudo: Execute commands as a superuser.
+
+    File Compression and Archiving:
+ - tar: Create and extract archive files.
+ - gzip, gunzip, zip, unzip: Compress and decompress files.
+
+<b>System Control:</b>
+ - reboot: Restart the system.
+ - shutdown: Shut down the system.
+ - systemctl: Control system services (systemd-based systems).
+
+<b>File Transfer and Remote Access:</b>
+ - ftp: File Transfer Protocol client.
+ - sftp: Secure FTP client.
+ - ssh: Secure Shell for remote access.
+
+These are just some of the fundamental Linux commands. Linux offers a wide range of utilities and tools for system administration, development, and various other tasks. You can explore more by using the man command followed by the command name to access the manual pages and learn about their usage and options. For example, man ls provides information about the ls command.
+
 
 ## References
 
