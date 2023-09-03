@@ -378,9 +378,34 @@ Command used  to bring a previously backgrounded process back to the foreground 
 
 # Maintaining Your System: Automation
 
+Users may want to schedule a certain action or task to take place after the system has booted. Take, for example, running commands, backing up files, or launching your favourite programs on, such as Spotify or Google Chrome.
+
+We're going to be talking about the `cron` process, but more specifically, how we can interact with it via the use of `crontabs`. Crontab is one of the processes that is started during boot, which is responsible for facilitating and managing cron jobs.
+
+![Crontab file](./assets/cron1.png)
+
+A crontab is simply a special file with formatting that is recognised by the `cron` process to execute each line step-by-step. <b>Crontabs require 6 specific values</b>:
+
+<table><tbody><tr><td>Value</td><td>Description</td></tr><tr><td>MIN</td><td>What minute to execute at</td></tr><tr><td>HOUR</td><td>What hour to execute at</td></tr><tr><td>DOM</td><td>What day of the month to execute at<br></td></tr><tr><td>MON</td><td>What month of the year to execute at</td></tr><tr><td>DOW</td><td>What day of the week to execute at</td></tr><tr><td>CMD</td><td>The actual command that will be executed.</td></tr></tbody></table>
+
+Let's use the example of backing up files. You may wish to backup "cmnatic"'s  "Documents" every 12 hours. We would use the following formatting: 
+
+`0 *12 * * * cp -R /home/cmnatic/Documents /var/backups/`
+
+An interesting feature of crontabs is that these also support the wildcard or asterisk (*). If we do not wish to provide a value for that specific field, i.e. we don't care what month, day, or year it is executed -- only that it is executed every 12 hours, we simply just place an asterisk.
+
+This can be confusing to begin with, which is why there are some great resources such as the online <a href="https://crontab-generator.org/">"Crontab Generator"</a> that allows you to use a friendly application to generate your formatting for you! As well as the site <a href="https://crontab.guru/">"Cron Guru"</a>!
+
+Crontabs can be edited by using `crontab -e`, where you can select an editor (such as Nano) to edit your crontab.
+
+Crontab generator:
+![Crontab Generator](./assets/cron2.png)
+
+Crontab -e
+![Crontab file](./assets/cron3.png)
+
 
 <Br><br><br><br>
-
 
 
 
