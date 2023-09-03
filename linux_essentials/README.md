@@ -216,7 +216,7 @@ VIM is a much more advanced text editor. Whilst you're not expected to know all 
 
 To go to insertion mode (write on a file) key press `i` 
 
-to leave insertion mode press "ESC"
+to leave insertion mode press KEY `ESC`
 
 `:q`  quit
 
@@ -240,8 +240,85 @@ Some of VIM's benefits, albeit taking a much longer time to become familiar with
 
 # General/Useful Utilities 
 
+<h3>curl</h3>
 
-`wget` url 
+Downloading a File:
+
+`curl -O https://example.com/file.zip`
+
+Downloading a File with a Different Name:
+
+`curl -o newfilename.zip https://example.com/file.zip`
+
+Http <b>GET</b> request
+
+`curl https://api.example.com/data`
+
+Http <b>POST</b> Request
+
+`curl -X POST -d "key1=value1&key2=value2" https://api.example.com/submit`
+
+Setting Custom Headers:
+`curl -H "Authorization: Bearer TOKEN" https://api.example.com/resource`
+
+Following redirects:
+
+`curl -L https://example.com/redirecting-url`
+
+Multiple files:
+
+`curl -O URL1 -O URL2`
+
+This command uploads a local file to a remote server using a POST request with the -F option:
+
+`curl -F "file=@/path/to/localfile.txt" https://example.com/upload`
+
+
+
+
+
+
+<h3>wget</h3>
+
+Downloading a File:
+
+`wget https://example.com/file.zip`
+
+
+Downloading a File with a Different Name:
+`wget -O newfilename.zip https://example.com/file.zip`
+
+If a download is interrupted, you can use the -c option to resume the download from where it left off:
+
+`wget -c https://example.com/largefile.zip`
+
+Limiting Download Speed (100 kilobytes per second): 
+`wget --limit-rate=100k https://example.com/largefile.zip`
+
+Downloading an Entire Website (This command recursively downloads a website, preserving its structure and converting links for local use.):
+
+`wget --recursive --no-clobber --page-requisites --html-extension --convert-links https://example.com`
+
+Downloading Files from a List (Create a text file (e.g., filelist.txt) with a list of URLs and then use -i to download all the files listed in the text file.):
+
+`wget -i filelist.txt`
+
+Using Cookies for Authentication (The first command logs in to a website, saves the session cookies to cookies.txt, and the second command uses the saved cookies to access a protected resource.):
+
+`wget --save-cookies cookies.txt --post-data "username=myuser&password=mypassword" https://example.com/login
+wget --load-cookies cookies.txt https://example.com/protected/resource
+`
+
+Downloading in the Background(This command runs the download in the background, allowing you to continue using the terminal while the file downloads.):
+
+`wget -b https://example.com/largefile.zip`
+
+Downloading via FTP (You can use wget to download files from FTP servers as well.):
+
+`wget ftp://ftp.example.com/remotefile.txt`
+
+
+
 
 This command allows us to download files from the web via HTTP -- as if you were accessing the file in your browser. We simply need to provide the address of the resource that we wish to download. 
 
@@ -274,6 +351,47 @@ The command will now look like the following:
 scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt 
 ```
 
+<br>
+<B>More examples SCP</B>
+
+Copying a File from Local to Remote:
+
+`scp localfile.txt username@remote_server:/path/to/destination/`
+
+Copying a File from Remote to Local:
+
+`scp username@remote_server:/path/to/remotefile.txt /path/to/destination/`
+
+Copying a Directory from Local to Remote:
+
+`scp -r local_directory/ username@remote_server:/path/to/destination/`
+
+Copying a Directory from Remote to Local:
+
+`scp -r username@remote_server:/path/to/remote_directory/ /path/to/destination/`
+
+Specifying a Port:
+
+`scp -P 2222 localfile.txt username@remote_server:/path/to/destination/`
+
+Using a Different SSH Key:
+
+`scp -i /path/to/ssh_key.pem localfile.txt username@remote_server:/path/to/destination/`
+
+Preserving File Attributes and Permissions:
+
+`scp -p localfile.txt username@remote_server:/path/to/destination/`
+
+Quiet Mode (No Progress):
+
+`scp -q localfile.txt username@remote_server:/path/to/destination/`
+
+Verbose Mode (Show Debug Information):
+
+`scp -v localfile.txt username@remote_server:/path/to/destination/`
+
+
+
 <h3>Serving Files From Your Host - WEB</h3>
 
 Ubuntu machines come pre-packaged with python3. Python helpfully provides a lightweight and easy-to-use module called "HTTPServer". This module turns your computer into a quick and easy web server that you can use to serve your own files, where they can then be downloaded by another computing using commands such as `curl` and `wget`. 
@@ -290,6 +408,7 @@ OUTPUT: Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.
 
+See too  <a href="https://github.com/sc0tfree/updog">Updog</a>, is a replacement for Python's SimpleHTTPServer. It allows uploading and downloading via HTTP/S, can set ad hoc SSL certificates and use http basic auth. 
 
 # Processes 101 
 
