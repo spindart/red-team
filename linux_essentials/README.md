@@ -196,12 +196,16 @@ todelete trash.txt rubbish.bin
 
 `nano` filename
 
-where `^` = Ctrl
+Remmber: `^` = `Ctrl`
+
+Example: `^O` = `Ctrl + O`
 
 You can navigate each line using "Up" and "Down" arrow keys to start a new line using the "Enter"
 
-^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
-^X Exit        ^R Read File   ^\ Replace     ^U Paste Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text
+<b>Commands nano</b>
+
+<b>^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
+^X Exit        ^R Read File   ^\ Replace     ^U Paste Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text</b>
 <hr>
 
 `vi` filename
@@ -312,9 +316,6 @@ Downloading via FTP (You can use wget to download files from FTP servers as well
 
 `wget ftp://ftp.example.com/remotefile.txt`
 
-
-
-
 This command allows us to download files from the web via HTTP -- as if you were accessing the file in your browser. We simply need to provide the address of the resource that we wish to download. 
 
 <h3>Transferring Files From Your Host - SCP (SSH)</h3>
@@ -384,8 +385,6 @@ Quiet Mode (No Progress):
 Verbose Mode (Show Debug Information):
 
 `scp -v localfile.txt username@remote_server:/path/to/destination/`
-
-
 
 <h3>Serving Files From Your Host - WEB</h3>
 
@@ -519,9 +518,7 @@ Crontab -e
 ![Crontab file](./assets/cron3.png)
 
 
-<Br><br><br><br>
-
-
+<br>
 
 # A-Z commands
 
@@ -804,12 +801,12 @@ Navigation within the manual pages is done using the keys:
 <ul>
 <li><b>q</b> Leaves the manual page; </li>
 <li><b>PageDown</b> or <b>f</b> Scrolls 25 lines down;</li>
- <li><b>PageUP</b> or <b>w</b> Scrolls 25 lines up;</li>
-  <li><b>ArrowUp</b> or <b>k</b> Rolls 1 line up; </li>
-  <li><b>ArrowDown</b> or <b>e</b> Scrolls 1 line down;</li>
-   <li><b>r</b> Redraws the screen (refresh); </li>
-   <li><b>p or </b>g</b> Top of page; h Help on man page options;</li>
-    <li><b>s</b> Saves the man page in text format to the specified file.</li>
+<li><b>PageUP</b> or <b>w</b> Scrolls 25 lines up;</li>
+<li><b>ArrowUp</b> or <b>k</b> Rolls 1 line up; </li>
+<li><b>ArrowDown</b> or <b>e</b> Scrolls 1 line down;</li>
+<li><b>r</b> Redraws the screen (refresh); </li>
+<li><b>p or </b>g</b> Top of page; h Help on man page options;</li>
+<li><b>s</b> Saves the man page in text format to the specified file.</li>
 </ul>
 
 `mkdir`
@@ -1019,10 +1016,7 @@ The who command in Linux lists all logged-in users on the system.
 
 whoami is a Unix command that allows you to show the current user of the system, even if you have permissions added with su.
 
-
 See distros Linux in https://distrowatch.com/
-
-
 
 ## References
 
