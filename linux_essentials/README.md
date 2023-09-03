@@ -379,7 +379,7 @@ Command used  to bring a previously backgrounded process back to the foreground 
 # Maintaining Your System: Automation
 
 
-<Br><br>
+<Br><br><br><br>
 
 
 
@@ -389,117 +389,117 @@ Command used  to bring a previously backgrounded process back to the foreground 
 
 ## A
 
-<b>alias</b>
+`alias`
 
 The alias command is simply a way to reference another command. It can be used to avoid repetitive long typing of commands and shell lines and simplify work.
 
-<b>at</b>
+`at`
 
 The at command in Linux is used to schedule jobs that do not run on a regular schedule.
 
-<b>awk</b>
+`awk`
 
 The AWK command dates back to the early Unix days. Long back before Perl or Python came into existence, AWK was used in scripts for manipulating text. You can use it for writing relatively complex programs, but also because of the powerful one-liners you can write to solve issues with your data files.
 
 ## B
 
-<b>basename</b>
+`basename`
 
 The basename command in Linux prints the final component in a file path. This is particularly helpful in bash scripts where you want to extract the file name from the long file path.
 
 ## C
 
-<b>cal</b>
+`cal`
 
 Unix-like systems provide a handful of tools for dealing with dates and times. Cal is one such command that enables you to view calendar in the command line.
 
-<b>cat</b>
+`cat`
 
 cat is one of the most used commands in Linux. Intended for concatenating text, it is mainly used for displaying the contents of text files.
 
-<b>cd</b>
+`cd`
 
 The cd command is used to navigate between directories in Linux. It stands for ‘change directory’.
 
-<b>chgrp</b>
+`chgrp`
 
 chgrp command is used for changing the group of a file or directory in Linux.
 
-<b>chmod</b>
+`chmod`
 
 chmod stands for change mode. This command is used for changing the mode of access, i.e. the file permissions in Linux.
 
-<b>chown</b>
+`chown`
 
 The chown command in Linux enables you to change the user and group ownership of a file or directory.
 
-<b>cp</b>
+`cp`
 
 One of the commands that you must know in Linux is cp. It’s often called the copy command in Linux and it is actually short for copy and it does exactly as it name suggests: it copies.
 
-<b>cron</b>
+`cron`
 
 The crontab is used to automate all types of tasks on Linux systems. This is an especially important skill for aspiring system administrators to learn.
 
-<b>curl</b>
+`curl`
 
 CURL is a tool for data transfer. The most popular use case for curl command is to download files from the web in Linux terminal.
 
-<b>cut</b>
+`cut`
 
 The cut command is the canonical tool to remove “columns” from a text file. In this context, a “column” can be defined as a range of characters or bytes identified by their physical position on the line, or a range of fields delimited by a separator.
 
 ## D
 
-<b>date</b>
+`date`
 
 The date command gives you the current date and time of you Linux system. But it can do a lot more than that.
 
-<b>dd</b>
+`dd`
 
 The dd command in Linux is a powerful utility for copying and converting files. Its most popular use case is creating live Linux USB using Linux command line.
 
-<b>df</b>
+`df`
 
 The df command is used for checking disk space in Linux.
 
-<b>diff</b>
+`diff`
 
 When you need to compare two files containing similar text in Linux, using the diff command can make your task much easier. The command compares two files to suggest changes that would make the files identical. Great for finding that extra curly brace that broke your newly updated code.
 
-<b>dig</b>
+`dig`
 
 Dig command in Linux is commonly used for retrieving the DNS information of a remote server.
 
-<b>dirname</b>
+`dirname`
 
 The dirname command in Linux prints a file path with its final component removed. This basically gives you the directory path from the file path.
 
-<b>du</b>
+`du`
 
 Knowing the size of a file is easy in Linux but it won't show the size of directories. The du command is used for checking the size of directory.
 
 ## E
 
-<b>echo</b>
+`echo`
 
 The echo command is perhaps one of the first few commands you see when you start learning Linux commands or bash shell scripting. It is a simple command that simply prints its arguments on the display.
 
-<b>emacs</b>
+`emacs`
 
 There are many text-based editors in Linux. GNU Emacs is one of the oldest and powerful editor that has a steep learning curve.
 
-<b>expand</b>
+`expand`
 
 This is a rather less known and less used command with the main use case being the ability to convert tabs into spaces.
 
 ## F
 
-<b>file </b>
+`file `
 
 The file command gives you various information about a file in Linux. This includes the type of file, MIME type etc.
 
-<b>find</b>
+`find`
 
 One of the frequent used commands. The find command can be used to looks for files based on their name, type, modification time and more. Combine it with the likes of exec or xargs command and you have a powerful tool at your hand for searching and modifying files.
 
@@ -515,25 +515,25 @@ Using "find" to find any file with the extension of ".txt"
  find -name *.txt
 ```
 
-<b>findmnt</b>
+`findmnt`
 
 Another lesser know command which is used for checking if a file system is mounted.
 
-<b>fmt and fold</b>
+`fmt and fold`
 
 Both of these commands are used for formatting text so the lines will fit in the available space on the target device.
 
-<b>free</b>
+`free`
 
 If you would like to know the detailed information about the memory availability on your Linux system, the free command is a simple utility that makes it easy to find real time results for a variety of use cases.
 
-<b>fsck</b>
+`fsck`
 
 The fsck (file system check) command helps with a potentially corrupted filesystem. This utility is used for checking and (optionally) repairing the file system.
 
 ## G
 
-<b>grep</b>
+`grep`
 
 Find command works on file name. The grep command is used to find patterns inside file content.
 
@@ -555,62 +555,62 @@ Using "grep" to find any entries with the IP address of "3.18.18.132" in "access
 grep 3.18.18.132 access.log
 ```
 
-<b>groupadd</b>
+`groupadd`
 
 The groupadd command in Linux creates new groups
 
-<b>groupdel</b>
+`groupdel`
 
 The groupdel command is perhaps the simplest command in Linux with virtually no options. It is used for deleting an existing group.
 
-<b>groupmod</b>
+`groupmod`
 
 You can modify group properties like group name and group ID with the groupmod command in Linux.
 
-<b>groups</b>
+`groups`
 
 This command helps you find the groups a Linux user belongs to in Linux command line.
 
 ## H
 
-<b>head</b>
+`head`
 
 You can use the head command to print a specified number of lines from the beginning of the file.
 
-<b>history</b>
+`history`
 
 Everything you type in the terminal is stored in the shell history. This aspect can be displayed and controlled through the history command.
 
 ## I
 
-<b>id</b>
+`id`
 
 Every user in Linux has a unique, numeric user ID and a default group with a unique numeric group ID. The id command prints this information.
 
 ## J
 
-<b>jobs</b>
+`jobs`
 
 The jobs command in Linux allows the user to directly interact with processes in the current shell.
 
 ## L
 
-<b>less</b>
+`less`
 
 Less is an awesome Linux command utility for viewing text files.
 
-<b>ln</b>
+`ln`
 
 The ln command allows you to create both soft and hard links in Linux.
 locate
 
 The locate command allows you to preform a super quick search for files.
 
-<b>ls</b>
+`ls`
 
 The ls command in Linux is one of the most used commands. It is used for listing the contents of a directory.
 
-<b>lsof</b>
+`lsof`
 
 You can list opened files by a user or a process by using the lsof command in Linux.
 
@@ -618,7 +618,7 @@ You can list opened files by a user or a process by using the lsof command in Li
 
 ### man
 
-The man command in Linux offers a manual of various GNU Linux commands, as well as a manual for other third-party programs. man offers a simplified interface for programmers to offer a manual of their programs. The manual pages accompany almost all GNU/Linux programs and can be installed according to the chosen language, if it is available in the distribution. The man information is called "Man Pages" and they provide a basic description of commands and details about how your options work.
+The `man` command in Linux offers a manual of various GNU Linux commands, as well as a manual for other third-party programs. man offers a simplified interface for programmers to offer a manual of their programs. The manual pages accompany almost all GNU/Linux programs and can be installed according to the chosen language, if it is available in the distribution. The man information is called "Man Pages" and they provide a basic description of commands and details about how your options work.
 
 The manual documents are divided into sessions according to the subject matter. The sessions are numbered from 1 to 9, as follows:
 
@@ -634,7 +634,7 @@ The manual documents are divided into sessions according to the subject matter. 
 </ol>
 
 Each page of the manual is divided into parts:
-<b>
+`<b>
 <ul>
 <li>NAME: Name of the item searched for with a short description;</li><li>SYNOPSIS: Full description of usage and syntax;</li>
  <li>DESCRIPTION: Brief description of the features; </li>
@@ -673,189 +673,191 @@ Navigation within the manual pages is done using the keys:
     <li><b>s</b> Saves the man page in text format to the specified file.</li>
 </ul>
 
-<b>mkdir</b>
+`mkdir`
 
 The mkdir command allows you to make new directories (folders in common term) in Linux.
 
-<b>mkfs</b>
+`mkfs`
 
 mkfs is the command line tool in Linux to format a disk or partition in a certain filesystem of your choice.
 
-<b>more</b>
+`more`
 
 The more command in Linux opens a text file in page views. It's predecessor to the less command and not used a lot these days.
 
-<b>mv</b>
+`mv`
 
 mv command in Linux is used for moving and renaming files and directories.
 
 ## N
 
-<b>nc (netcat)</b>
+`nc (netcat)`
 
 The core functionality of Netcat is allowing two computers to connect and share resources. It is a powerful and versatile network tool that is available for Linux, Mac, and Windows machines.
 
-<b>nohup</b>
+`nohup`
 
 Nohup command in Linux enables you to run commands even after logging out.
 
-<b>nslookup</b>
+`nslookup`
 
 nslookup is one of the popular networking commands in Linux used for querying the Domain Name System (DNS) records.
 
 ## P
 
-<b>passwd</b>
+`passwd`
 
 The passwd command in Linux allows you to change user password, lock accounts, expire passwords and more.
 
-<b>paste</b>
+`paste`
 
 The paste command merges several input files to produce a new delimited text file from them.
 
-<b>ping</b>
+`ping`
 
 Ping is mainly used to check if a remote host is reachable or not.
 
-<b>printf</b>
+`printf`
 
 You may print simple outputs with echo command but that's not enough for complicated formatted outputs. printf allows a C styled formating of the output.
 
-<b>ps</b>
+`ps`
 
 The ps command in Linux is used for getting information about running processes.
 
 ## R
 
-<b>read</b>
+`read`
 
 With read command, you can make your bash script interactive by accepting user inputs.
 
-<b>reboot</b>
+`reboot`
 
 Reboot performs the actions of the halt command (explained below), requiring that all processing stop. Then instead of triggering the ACPI signal, your system is restarted.
 
-<b>rename</b>
+`rename`
 
 Rename command can be used to rename multiple files in Linux at once.
 
-<b>rm </b>
+`rm `
 
 The rm command is used for removing files and directories in Linux.
 
-<b>rsync</b>
+`rsync`
 
 Rsync (Remote Sync) is a synchronization tool for copying files and directories in a system or between systems. Its most popular use case includes copying files between remote systems.
 
 ## S
 
-<b>scp</b>
+`scp`
 
 Scp stands for secure copy but I like to think it as 'SSH copy'. Like rsync, scp is also used for copying files between remote systems.
 
-<b>screen</b>
+`screen`
 
 The screen command in Linux allows you to use multiple virtual terminals that can be saved by name and reopened using keyboard shortcuts.
 
-<b>sed</b>
+`sed`
 
 Sed is part of the Unix standard toolbox since the end of the 60s. As any text editor, it will help you to modify text files.
 
-<b>seq</b>
+`seq`
 
 The seq command, short for sequence, is used for printing a sequence of numbers. The numbers could be integers or real (with decimal points).
 
-<b>sleep</b>
+`sleep`
 
 Linux sleep command is one of the simplest commands out there. As you can guess from the name, its only function is to sleep. In other words, it introduces a delay for a specified time.
 
-<b>source</b>
+`source`
 
 The source command is a handy utility that can be used to refresh environment variables among some other things.
 
-<b>stat</b>
+`stat`
 
 You can get file permissions, size, mtime, ctime, atime, ownership and several other file attribute information using the stat command in Linux.
 
 ## T
 
-<b>tail</b>
+`tail`
 
 The tail command prints the last ten lines of the input files. The tail command is also used for reading log files in real time.
 
-<b>tar</b>
+`tar`
 
 Tar is one of the most common tool used for archiving files in Linux.
 
-<b>tee</b>
+`tee`
 
 The tee command reads from the standard input and writes to both standard output and files. The result is that you get to see your command’s output as well as save it to a file at the same time.
 
-<b>time</b>
+`time`
 
 The time command in Linux measures how long a particular command or script runs.
 
-<b>timeout</b>
+`timeout`
 
 With the timeout command you can set a time limit on running other commands and programs.
 
-<b>top</b>
+`top`
 
 The top command provides a quick look at system resources and processes.
 
-<b>touch</b>
+`touch`
 
 Touch command in Linux is used for changing file timestamps however one of the most common usages of touch command includes creating a new empty file.
 
-<b>tr</b>
+`tr`
 
 The tr command in Linux is used to perform simple but useful translations of one set of characters into another.
 
-<b>type</b>
+`type`
 
 The type command tells you whether a Linux command is built-in shell command, where is its executable located and whether it is aliased to some other command.
 
 ## U
 
-<b>ulimit</b>
+`ulimit`
 
 Ulimit is a built-in shell command designed to display, allocate, and limit resources.
 
-<b>uname</b>
+`uname`
 
 You can get Linux kernel version and some other system information with the uname command in Linux.
-<b>uniq</b>
+`uniq`
 
 The uniq command in Linux and Unix is used for removing duplicate lines from a file.
-<b>useradd</b>
+`useradd`
 
 The useradd command lets a superuser create a new user account on Linux.
-userdel
+
+`userdel`
 
 The userdel lets you delete an existing user.
-<b>usermod</b>
+
+`usermod`
 
 The usermod command in Linux allows you to modify a user account in various ways.
 
 ## V
 
-<b>vim</b>
+`vim`
 
 Vim is one of the most popular text editor in the Linux command line.
 
 ## W
 
-<b>watch</b>
+`watch`
 
 Watch is a great utility that automatically refreshes data. Some of the more common uses for this command involve monitoring system processes or logs, but it can be used in combination with pipes for more versatility.
 
-<b>wc</b>
+`wc`
 
 The wc command displays statistical information about a file such as the number of lines, words, characters.
 
 <b>Examples</b>
 
-Using "wc" to count the number of entries in "access.log"
+Using `wc` to count the number of entries in "access.log"
 
 ```bash
 wc -l access.log
@@ -866,15 +868,15 @@ Using "wc" to count the number of entries in "passwords.txt"
 wc -l passwords.txt
 ```
 
-<b>which</b>
+`which`
 
 which command is an extremely useful command for locating executable files located anywhere in the Linux system.
 
-<b>who</b>
+`who`
 
 The who command in Linux lists all logged-in users on the system.
 
-<b>whoami</b>
+`whoami`
 
 whoami is a Unix command that allows you to show the current user of the system, even if you have permissions added with su.
 
