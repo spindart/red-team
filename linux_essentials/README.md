@@ -13,7 +13,7 @@ The most important command in Linux terminal is <strong><a href="#man">man(ual)<
 through this command you get the manual to understand commands and how to use them
 
 
-## Interacting With the Filesystem
+# Interacting With the Filesystem
 
 Basic commands to interact with the filesystem
 
@@ -37,7 +37,7 @@ Basic commands to interact with the filesystem
 </tbody>
 </table>
 
-## An Introduction to Shell Operators
+# An Introduction to Shell Operators
 
 <table><tbody><tr><td>Symbol / Operator</td><td>Description</td></tr><tr><td>&amp;</td><td>This operator allows you to run commands in the background of your terminal.</td></tr><tr><td>&amp;&amp;</td><td>This operator allows you to combine multiple commands together in one line of your terminal.</td></tr><tr><td>&gt;</td><td>This operator is a redirector - meaning that we can take the output from a command (such as using cat to output a file) and direct it elsewhere.</td></tr><tr><td>&gt;&gt;</td><td><p>This operator does the same function of the <code>&gt;</code> operator but appends the output rather than replacing (meaning nothing is overwritten).</p></td></tr></tbody></table>
 
@@ -88,7 +88,7 @@ OUTPUT:
 hey<br>
 hello
 
-## SSH
+# SSH
 
 <b>What is SSH & how Does it Work?</b>
 
@@ -111,7 +111,7 @@ That is:
 
 ssh username_account@MACHINE_IP
 
-## Permissions 101
+# Permissions 101
 
 
 Using ls -lh to list the permissions of all files in the directory
@@ -136,7 +136,7 @@ Where now, after using <b>-l</b>, our new session has dropped us into the home d
 in this case: /home/user2
 
 
-## Common Directories 
+# Common Directories 
 
 <b>/etc</b>
 
@@ -192,7 +192,7 @@ root@linux2:/tmp# ls
 todelete trash.txt rubbish.bin
 ```
 
-### Terminal text editors
+# Terminal text editors
 
 `nano` filename
 
@@ -238,7 +238,7 @@ Some of VIM's benefits, albeit taking a much longer time to become familiar with
 <hr>
 
 
-## General/Useful Utilities 
+# General/Useful Utilities 
 
 
 `wget` url 
@@ -291,36 +291,43 @@ OUTPUT: Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.
 
 
-## Processes 101 
+# Processes 101 
 
-Processes are the programs that are running on your machine. They are managed by the kernel, where each process will have an ID associated with it, also known as its PID. The PID increments for the order In which the process starts. I.e. the 60th process will have a PID of 60.
+<b>PID</b> = In the context of operating systems, PID stands for Process ID. It is a unique identifier assigned to each running process in a system. PIDs are usually assigned in sequential order as processes are created, but can be recycled once a process has completed and terminated. 
+
+<hr>
+
+Processes are the programs that are running on your machine. They are managed by the kernel, where each process will have an ID associated with it, also known as its <b>PID</b>. The <b>PID</b> increments for the order In which the process starts. I.e. the 60th process will have a PID of 60.
 
 ### Viewing Processes
 
+remember <a href="#man">man</a> `ps` to show all informations about ps
+
 We can use the friendly `ps` command to provide a list of the running processes as our user's session and some additional information such as its status code, the session that is running it, how much usage time of the CPU it is using, and the name of the actual program or command that is being executed.
 
-To see the processes run by other users and those that don't run from a session (i.e. system processes), we need to provide aux to the ps command like so:  `ps aux`
+To see the processes run by other users and those that don't run from a session (i.e. system processes), we need to provide `aux` to the ps command like so:  `ps aux`
 
-Another very useful command is the top command; `top` gives you real-time statistics about the processes running on your system instead of a one-time view. These statistics will refresh every 10 seconds, but will also refresh when you use the arrow keys to browse the various rows. Another great command to gain insight into your system is via the `top` command
+Another very useful command is the top command; `top` gives you real-time statistics about the processes running on your system instead of a one-time view. These statistics will <b>refresh every 10 seconds</b>, but will also refresh when you use the arrow keys to browse the various rows. Another great command to gain insight into your system is via the `top` command
 
 ### Managing Processes
 
-You can send signals that terminate processes; there are a variety of types of signals that correlate to exactly how "cleanly" the process is dealt with by the kernel. To `kill` a command, we can use the appropriately named kill command and the associated PID that we wish to kill. i.e., to kill PID 1337, we'd use `kill 1337`.
+You can send signals that terminate processes; there are a variety of types of signals that correlate to exactly how "cleanly" the process is dealt with by the kernel. To `kill` a command, we can use the appropriately named kill command and the associated <b>PID</b> that we wish to kill. i.e., to kill PID 1337, we'd use `kill 1337`.
 
 Below are some of the signals that we can send to a process when it is killed:
- - SIGTERM - Kill the process, but allow it to do some cleanup tasks beforehand
- - SIGKILL - Kill the process - doesn't do any cleanup after the fact
- - SIGSTOP - Stop/suspend a process
+ - <b>SIGTERM</b> - Kill the process, but allow it to do some cleanup tasks beforehand `kill -15 <process_id>`
+ - <b>SIGKILL</b> - Kill the process - doesn't do any cleanup after the fact `kill -9 <process_id>`
+ - <b>SIGSTOP</b> - Stop/suspend a process `kill -STOP <process_id>` or `kill -19 <process_id>`
+ - <b>SIGCONT</b> - Continue a process SIGSTOP `kill -CONT <process_id>` or `kill -18 <process_id>`
 
 ### How do Processes Start?
 
-Let's start off by talking about namespaces. The Operating System (OS) uses namespaces to ultimately split up the resources available on the computer to (such as CPU, RAM and priority) processes. Think of it as splitting your computer up into slices -- similar to a cake. Processes within that slice will have access to a certain amount of computing power, however, it will be a small portion of what is actually available to every process overall.
+Let's start off by talking about namespaces. The Operating System (OS) uses namespaces to ultimately split up the resources available on the computer to (such as CPU, RAM and priority) processes. <b>Think of it as splitting your computer up into slices -- similar to a cake</b>. Processes within that slice will have access to a certain amount of computing power, however, it will be a small portion of what is actually available to every process overall.
 
-Namespaces are great for security as it is a way of isolating processes from another -- only those that are in the same namespace will be able to see each other.
+<b>Namespaces are great for security as it is a way of isolating processes from another -- only those that are in the same namespace will be able to see each other.</b>
 
-We previously talked about how PID works, and this is where it comes into play. The process with an ID of 0 is a process that is started when the system boots. This process is the system's init on Ubuntu, such as systemd, which is used to provide a way of managing a user's processes and sits in between the operating system and the user. 
+We previously talked about how PID works, and this is where it comes into play. <b>The process with an ID of 0 is a process that is started when the system boots</b>. <b>This process is the system's init on Ubuntu, such as systemd</b>, which is used to provide a way of managing a user's processes and sits in between the operating system and the user. 
 
-For example, once a system boots and it initialises, systemd is one of the first processes that are started. Any program or piece of software that we want to start will start as what's known as a child process of systemd. This means that it is controlled by systemd, but will run as its own process (although sharing the resources from systemd) to make it easier for us to identify and the likes.
+For example, once a system boots and it initialises, <b>systemd</b> is one of the first processes that are started. <b>Any program or piece of software that we want to start will start as what's known as a child process of systemd</b>. <b>This means that it is controlled by systemd, but will run as its own process (although sharing the resources from systemd) to make it easier for us to identify and the likes</b>.
 
 <img src="./assets/process1.png" width="600">
 
@@ -336,10 +343,40 @@ For example, to tell apache to start up, we'll use `systemctl start apache2`. Se
 
 We can do four options with `systemctl`:
 
-- Start
-- Stop
-- Enable
-- Disable
+- Start `systemctl start myservice`
+- Stop `systemctl stop myservice`
+- Enable `systemctl enable myservice`
+- Disable `systemctl disable myservice`
+
+### An Introduction to Backgrounding and Foregrounding in Linux
+
+Processes can run in two states: In the background and in the foreground. For example, commands that you run in your terminal such as "echo" or things of that sort will run in the foreground of your terminal as it is the only command provided that hasn't been told to run in the background. "Echo" is a great example as the output of echo will return to you in the foreground, but wouldn't in the background - take the screenshot below, for example.
+
+![Proccess in background returning PID](./assets/process2.png)
+
+Here we're running echo `"Hi Spindart"` , where we expect the output to be returned to us like it is at the start. But after adding the `&` operator to the command, we're instead just given the <b>ID</b> of the echo process rather than the actual output -- <b>as it is running in the background.</b>
+
+<b>This is great for commands such as copying files because it means that we can run the command in the background and continue on with whatever further commands we wish to execute (without having to wait for the file copy to finish first)</b>
+
+We can do the exact same when executing things like scripts -- rather than relying on the `&` operator, we can use `Ctrl + Z` on our keyboard to background a process. It is also an effective way of <b>"pausing"</b> the execution of a script or command like in the example below:
+
+![Proccess Script loop stopped](./assets/process3.png)
+
+This script will keep on repeating "This will keep on looping until I stop!" until I stop or suspend the process. By using `Ctrl + Z` <b>(as indicated by T^Z)</b>. Now our terminal is no longer filled up with messages -- until we foreground it, which we will discuss below.
+
+#### Foregrounding a process
+
+Now that we have a process running in the background, for example, our script "background.sh" which can be confirmed by using the `ps aux` command, we can back-pedal and bring this process back to the foreground to interact with.
+
+![Proccess Script loop stopped](./assets/process4.png)
+
+With our process backgrounded using either `Ctrl + Z` or the `&` operator, we can use `fg` to bring this back to focus like below, where we can see the `fg` command is being used to bring the background process back into use on the terminal, where the output of the script is now returned to us.
+
+Command used  to bring a previously backgrounded process back to the foreground `fg`
+
+<hr>
+
+# Maintaining Your System: Automation
 
 
 <Br><br>
