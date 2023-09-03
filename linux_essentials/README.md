@@ -1125,7 +1125,7 @@ See distros Linux in https://distrowatch.com/
  - groupadd, groupdel: Add or delete groups.
  - sudo: Execute commands as a superuser.
 
-    File Compression and Archiving:
+File Compression and Archiving:
  - tar: Create and extract archive files.
  - gzip, gunzip, zip, unzip: Compress and decompress files.
 
