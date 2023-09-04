@@ -138,6 +138,17 @@ in this case: /home/user2
 
 # Common Directories 
 
+<b> ~ and # difference </b>
+
+Although it may vary in appearance depending on the Linux distribution used, it will usually include the <b>name_user@name_host</b>, followed by the current working directory (represented by the symbol: <b>~</b>), and a dollar sign. If the last character of the prompt is a pound sign (<b>#</b>), rather than a dollar sign (<b>$</b>), the terminal session has super user privileges. This means that we log in as the root user or select a terminal emulator that provides super user (administrative) privileges.
+
+<img src="./assets/root.png" width="300">
+
+
+<b> / </b>
+
+This symbolizes the root of the main directory; and it is from it that the other directories and files will be present.
+
 <b>/etc</b>
 
 This root directory is one of the most important root directories on your system. The etc folder (short for etcetera) is a commonplace location to store system files that are used by your operating system. 
