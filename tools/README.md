@@ -35,6 +35,10 @@
   <a href="#others">Others</a> 
 </p>
 
+# OWASP
+
+[OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x00-header/)
+
 ## Guides
 
 - [Red Team Guide](https://redteam.guide/docs/templates/roe_template/)
@@ -194,6 +198,11 @@ sudo nmap -v -A devsemfronteiras.tech
 - [wpscan](https://github.com/wpscanteam/wpscan)
 - [nikto](https://github.com/sullo/nikto)
 - [owaspzap](https://www.zaproxy.org/)
+- [joomscan](https://github.com/OWASP/joomscan)
+- [faraday](https://github.com/infobyte/faraday)
+- [nessus](https://www.tenable.com/products/nessus) 
+- [openvas](https://github.com/greenbone/openvas-scanner) 
+- [ncat](https://nmap.org/ncat/guide/index.html) 
 
 ## SENSITIVE DATA
 
@@ -277,7 +286,7 @@ sudo nmap -v -A devsemfronteiras.tech
 - [CMD Commands for hacking](https://cmdwindows.com/cmd-commands-for-hacking)
 - [Hackmageddon](https://www.hackmageddon.com/)
 
-## References
+## Credits and references
 
 - https://tryhackme.com/
 - Gdorks Dracul

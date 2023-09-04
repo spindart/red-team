@@ -451,10 +451,6 @@ Replace filename.tar, filename.tar.gz, filename.tar.bz2, or filename.tar.xz with
 
 After running the appropriate tar command, the files and directories contained within the archive will be extracted to the current directory or the directory specified in the archive, depending on how the archive was created.
 
-
-
-
-
 # Processes 101 
 
 <b>PID</b> = In the context of operating systems, PID stands for Process ID. It is a unique identifier assigned to each running process in a system. PIDs are usually assigned in sequential order as processes are created, but can be recycled once a process has completed and terminated. 
@@ -641,6 +637,13 @@ There are, of course, logs that store information about how the OS is running it
 
 # A-Z commands
 
+`|`
+
+`command1 | command2`
+
+<b>Example</b>
+
+`/usr/bin | less`
 
 ## A
 
@@ -671,6 +674,90 @@ Unix-like systems provide a handful of tools for dealing with dates and times. C
 `cat`
 
 cat is one of the most used commands in Linux. Intended for concatenating text, it is mainly used for displaying the contents of text files.
+
+<b>Examples:</b>
+
+Concatenate 2 files and print the output:
+
+`cat output1.txt output2.txt`
+
+
+`cd /var/log/apache2`
+
+Example (The result is a list of unique IP addresses with their respective counts, sorted by the number of times each IP address appeared in the log. This can be useful for identifying the most frequent visitors to a web server or for analyzing access patterns)
+
+#### apache2 access.log structure
+
+An access log record written in the Common Log Format will look something like this:
+
+<b>Common Log Format</b>
+
+`127.0.0.1 - Scott [10/Dec/2019:13:55:36 -0700] "GET /server-status HTTP/1.1" 200 2326`
+
+
+- 127.0.0.1 - IP address of the client that made the request;
+- The hyphen defining the second field in the log file is the identity of the client. This field is often returned as a hyphen and Apache’s HTTP server documentation recommends that this particular field not be relied upon except in the case of a controlled internal network.
+- Scott - userid of the person requesting the resource;
+- [10/Dec/2019:13:55:36 -0700] - date and time of the request;
+- “GET /server-status HTTP/1.1" - request type and resource being requested;
+- 200 - HTTP response status code;
+- 2326 - size of the object returned to the client.
+
+<b>Combined Log Format</b>
+
+Another format that is often used with Apache access logs is the Combined Log Format. This format is very similar to the Common Log Format but contains a few extra fields to provide more information for use in analysis and debugging operations. An access log record that is recorded in the Combined Log Format looks something like this:
+
+`127.0.0.1 - Scott [10/Dec/2019:13:55:36 -0700] "GET /server-status HTTP/1.1" 200 2326 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"`
+
+As you can see, the first seven fields are identical to those in Common Log Format. The remaining fields represent two additional properties:
+
+- "http://localhost/" - This is the HTTP referrer, which represents the address from which the request for the resource originated.
+- "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" - This is the User Agent, which identifies information about the browser that the client is using to access the resource.
+
+
+`cat acess.log | cut -d " " -f 1 | sort -n | uniq -c | sort -n`
+
+- `cat access.log` It reads the contents of the "access.log" file.
+- `cut -d " " -f 1` It uses cut to extract the IP address (the first field) from each line, assuming that space is the delimiter between fields.
+- `sort -n` It sorts the extracted IP addresses numerically.
+    It uses uniq to count and remove duplicate IP addresses from the sorted list.
+- `uniq -c` The output will show each unique IP address along with the number of times it appeared in the log, which can be useful for analyzing web server access patterns and identifying potential issues or suspicious activity.
+- `sort -n` Sorts the output based on the count of occurrences in ascending order.
+
+
+Imagine that with this command above we check many records in Access.log coming from the same IP (176.131.2.18), we will investigate what only these requests in our web server, because it is very suspicious
+
+First 100 lines
+
+`cat access.log | grep 176.131.2.18 | head -n 100`
+
+Last 100 lines
+
+`cat access.log | grep 176.131.2.18 | tail -n 100`
+
+Among those lines, it further filters for lines that also contain the string "Nikto" and '-i` to ignore case-sensitive
+
+`cat access.log | grep 176.131.2.18 | grep -i "nikto"`
+
+Another example
+
+Among those lines, it further filters for lines that also contain the string "nmap" and '-i` to ignore case-sensitive
+
+`cat access.log | grep 176.131.2.18 | grep -i "nmap"`
+
+`cat access.log | grep 176.131.2.18 | cut -d " " -f 9 | uniq -c`
+
+<hr>
+
+`tac`
+
+similar to "cat" `tac` inverts and prints lines from the end to the beginning.
+
+<b>Example:</b>
+
+`tac output1.txt output2.txt`
+
+
 
 `cd`
 
@@ -832,6 +919,12 @@ This command helps you find the groups a Linux user belongs to in Linux command 
 
 You can use the head command to print a specified number of lines from the beginning of the file.
 
+<b>Example output 5 lines from beginning of the file</b>
+
+`head -n 5 output.txt`
+
+<hr>
+
 `history`
 
 Everything you type in the terminal is stored in the shell history. This aspect can be displayed and controlled through the history command.
@@ -864,6 +957,16 @@ The locate command allows you to preform a super quick search for files.
 `ls`
 
 The ls command in Linux is one of the most used commands. It is used for listing the contents of a directory.
+
+<b>Example</b>
+
+This command lists the files in the "/usr/bin" directory in detail and redirects the output to a file named "output.txt".
+
+
+`ls -l /usr/bin > output.txt`
+
+<br>
+
 
 `lsof`
 
