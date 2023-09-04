@@ -1,6 +1,8 @@
-First of all see this video:
+# First of all see these videos:
 
 [Sua Segurança é uma DROGA | Gerenciadores de Senhas, 2FA, Encriptação ](https://www.youtube.com/watch?v=s7ldn31OEFc)
+
+[How Easy It Is To Crack Your Password, With Kevin Mitnick](https://www.youtube.com/watch?v=K-96JmC2AkE) 
 
 # Strong passwords & Password managers
 
