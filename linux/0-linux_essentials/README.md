@@ -158,6 +158,8 @@ shadow passwd sudoers sudoers.d
 
 The "/var" directory, with "var" being short for variable data,  is one of the main root folders found on a Linux install. This folder stores data that is frequently accessed or written by services or applications running on the system. For example, log files from running services and applications are written here (/var/log), or other data that is not necessarily associated with a specific user (i.e., databases and the like).
 
+Resume:
+Variable data handled by daemons. This includes log files, queues, spools, and caches.
 
 <b>Some notable contents of the /var directory</b>
 
@@ -191,6 +193,64 @@ This is a unique root directory found on a Linux install. Short for <b>"temporar
 root@linux2:/tmp# ls
 todelete trash.txt rubbish.bin
 ```
+
+<b>/bin</b>
+
+ Basic programs
+
+<b>/boot</b>
+
+Linux kernel and another files necessary to boot
+
+<b>/dev</b>
+
+Device files
+
+<b>/home</b>
+
+user's personal files
+
+<b>/lib</b>
+
+Personal librarys
+
+<b>/media/*</b>
+
+mount points for removable files
+
+<b>/mnt</b>
+
+temporary mount point
+
+<b>/opt</b>
+
+Extra apps offered by third parties
+
+<b>/run</b>
+
+runtime data, maintain data at run time, which does not persist on reboots (not yet included in FHS)
+
+<b>/sbin</b>
+
+system programs
+
+<b>/srv</b>
+
+Data used by servers hosted on this system
+
+<b>/usr</b>
+
+applications, this directory is subdivided into bin, sbin, lib according to the same logic as the root directory.
+
+<b>/proc and /sys</b>
+
+are specific to the Linux kernel (and are not part of FHS). They are used by the kernel to export data to userspace.
+
+
+
+
+
+
 
 # Terminal text editors
 
@@ -791,6 +851,10 @@ CURL is a tool for data transfer. The most popular use case for curl command is 
 
 The cut command is the canonical tool to remove “columns” from a text file. In this context, a “column” can be defined as a range of characters or bytes identified by their physical position on the line, or a range of fields delimited by a separator.
 
+<b>Example</b>
+
+`cut -d “ “ -f 3 output.txt`
+
 ## D
 
 `date`
@@ -965,6 +1029,8 @@ This command lists the files in the "/usr/bin" directory in detail and redirects
 
 `ls -l /usr/bin > output.txt`
 
+`ls /usr/bin | grep new`
+
 <br>
 
 
@@ -1056,6 +1122,18 @@ The core functionality of Netcat is allowing two computers to connect and share 
 `nohup`
 
 Nohup command in Linux enables you to run commands even after logging out.
+
+`nl`
+
+Number linse of file
+
+<b> Example </b>
+
+`nl output.txt`
+
+`nl -s ‘. ’ -w 10 saida-local.txt`
+
+<br>
 
 `nslookup`
 
@@ -1225,6 +1303,13 @@ Using "wc" to count the number of entries in "passwords.txt"
 ```bash
 wc -l passwords.txt
 ```
+
+`wc -c output.txt`
+
+`wc -w output.txt`
+
+`wc -l output.txt`
+
 
 `which`
 
