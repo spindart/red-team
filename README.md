@@ -27,7 +27,8 @@
 
 ## Linux
 <ol>
- <li><a href="./linux_essentials//">Linux Essentials</a> </li>
+ <li><a href="./linux/0-linux_essentials/">Linux Essentials</a> </li>
+ <li><a href="./linux/1-bash-scripting/">Bash Scripting</a> </li>
 </ol>
 
 
