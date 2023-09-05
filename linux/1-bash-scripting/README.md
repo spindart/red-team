@@ -113,3 +113,45 @@ We can also use multiple variables in something like an echo statement. You aren
 <img src="assets/variables5.png" alt="Tools" width="500">
 
 <img src="assets/variables6.png" alt="Tools" width="500">
+
+# Parameters
+
+We will now look at one of the main features of bash and that's using parameters.
+
+
+We will firstly  look at parameters specified using the command line when running the file. These come in many forms but often have the "$" prefix because a parameter is still a variable.
+
+Lets start by declaring a parameter that is going to be our first argument when running our bash script.
+
+<img src="assets/parameters1.png" alt="Tools" width="300">
+
+
+We now run our script with `./example.sh Spindart`
+
+And sure enough we get returned with “Spindart”
+
+So what if we wanted the 2nd argument? Well the process is very simple and we simply add a `$2` instead of `name=$1`
+
+Then run with `./example.sh Spin Dart`
+
+What do you think it would return?
+
+And it would return <b>"Dart"</b>.
+
+What if we didn't want to supply them like this however, and instead it would let us type in our name in a more interactive way, we can do this using `read`.
+
+<img src="assets/parameters2.png" alt="Tools" width="400">
+
+This code will hang after its ran, this gives you the opportunity to type in your name.
+
+And we can see that it worked!
+
+
+Maybe try making a little biography maker, where you take the name, age, and job as parameters. Store them inside a variable and then output them to the screen inside a sentence. 
+
+<img src="assets/parameters4.png" alt="Tools" width="500">
+
+
+<img src="assets/parameters3.png" alt="Tools" width="500">
+
+However there is so much more that you can do with parameters and I advice you to play around with them, after all practice is what makes you better! 
