@@ -280,6 +280,13 @@ sudo nmap -v -A devsemfronteiras.tech
 
 - [The Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit)
 
+## STEGANOGRAPHY
+
+- [zsteg](https://github.com/zed-0xff/zsteg)
+- [Aperi'Solve](https://www.aperisolve.fr/)
+- [StegOnline](https://stegonline.georgeom.net/)
+
+
 ## OTHERS
 
 - [haveibeenpwned](https://haveibeenpwned.com/)
