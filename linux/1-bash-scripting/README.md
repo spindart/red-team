@@ -79,7 +79,7 @@ If we test this out in our own terminal we get something like this:
 
 `name="Jammy"`
 
-`$ echo $name`
+`echo $name`
 
 `Jammy`
 
