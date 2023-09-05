@@ -1,7 +1,3 @@
-
-
-
-
 <h1 align="center">
 <br>
   Linux Essentials
@@ -143,7 +139,6 @@ in this case: /home/user2
 Although it may vary in appearance depending on the Linux distribution used, it will usually include the <b>name_user@name_host</b>, followed by the current working directory (represented by the symbol: <b>~</b>), and a dollar sign. If the last character of the prompt is a pound sign (<b>#</b>), rather than a dollar sign (<b>$</b>), the terminal session has super user privileges. This means that we log in as the root user or select a terminal emulator that provides super user (administrative) privileges.
 
 <img src="./assets/root.png" width="300">
-
 
 <b> / </b>
 
