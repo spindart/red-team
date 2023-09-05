@@ -24,6 +24,10 @@ I found this website very useful when I was on my journey of learning bash, feel
 
 # First simple bash scripts 
 
+Use any editor of your preference, vi, vim, nano, etc.
+
+And remember to save it with filename`.sh`
+
 First of all let’s lay out our structure.
 
 A bash script always starts with the following line of code at the top of the script.
@@ -53,7 +57,7 @@ This will return the string <b>“Hello World”</b>, whoami, id and ls command.
 
 Now to run our bash script we must first give it executable permissions
 
-`Chmod +x yourfile.sh`
+`chmod +x yourfile.sh`
 
 And then we run it using `./yourfile.sh`
 
