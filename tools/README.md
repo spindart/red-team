@@ -32,6 +32,7 @@
   <a href="#communication">Communication</a> •
   <a href="#network-mapping">Network mapping</a>   •
   <a href="#social-engineer">Social Engineer</a>   •
+  <a href="#steganography">Steganography</a>   •
   <a href="#others">Others</a> 
 </p>
 
