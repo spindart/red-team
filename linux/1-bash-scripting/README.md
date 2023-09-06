@@ -244,6 +244,17 @@ new_transports=("${transports[@]:0:index_to_remove}" "${transports[@]:index_to_r
 # Print the new array
 echo "Array with element at index $index_to_remove removed: ${new_transports[@]}"
 ```
+
+In this script:
+
+- We declare an array named transports.
+- We specify the index (index_to_remove) of the element we want to remove, which is 1 (the second element, 'train' in this case).
+- We create a new array named new_transports by concatenating two slices of the original transports array. The first slice includes elements from the beginning up to the index to remove, and the second slice includes elements from the index after the one we want to remove to the end.
+- Finally, we print the new array without the specified element.
+
+This way, you effectively remove the desired element from the array.
+
+
 So we successfully managed to swap out an element in our array!
 
 As a little side project try building on your previous project of a biography maker, include arrays so that you can store multiple names and multiple facts about the person. 
