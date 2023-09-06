@@ -1,7 +1,7 @@
 <h1 align="center">
 Bash scripting
 
-<img src="assets/bash.jpg" alt="Tools" width="300">
+<img src="assets/bash.jpg" width="300">
 </h1>
 <br>
 
@@ -66,7 +66,7 @@ We can see it has outputted the results of the commands "echo", “whoami”, �
 #  Variables 
 Now we are moving onto variables, in bash these are quite simple and we create them like so:
 
-<img src="assets/variables1.png" alt="Tools" width="300">
+<img src="assets/variables1.png" width="300">
 
 Where we give the value of `Jammy` and assign it to the variable `name`.
 
@@ -77,7 +77,7 @@ So how would we now use our variable? Well its also very simple.
 
 We have to add a `$` onto front of our variable name in order to use it.
 
-<img src="assets/variables2.png" alt="Tools" width="300">
+<img src="assets/variables2.png" width="300">
 
 If we test this out in our own terminal we get something like this:
 
@@ -103,20 +103,20 @@ You can make a simple bash script(now you know some basic syntax) and make somet
 
 This tells you which lines are working and which lines are not. If you want to debug at a certain point you can insert `set -x` into your script and `set +x` to end the section like the following:
 
-<img src="assets/variables3.png" alt="Tools" width="300">
+<img src="assets/variables3.png" width="300">
 
 So lets look at an example. This is our script from earlier being ran with `bash -x ./example.sh`
 
-<img src="assets/variables4.png" alt="Tools" width="500">
+<img src="assets/variables4.png" width="500">
 
 You can see its outputting a + for the command and then the output of what that command executed. If there was an error it would output a - on that line this makes it easy to spot where you have gone wrong so you can fix them.
 
 
 We can also use multiple variables in something like an echo statement. You aren't just limited to using 1!
 
-<img src="assets/variables5.png" alt="Tools" width="500">
+<img src="assets/variables5.png" width="500">
 
-<img src="assets/variables6.png" alt="Tools" width="500">
+<img src="assets/variables6.png" width="500">
 
 # Parameters
 
@@ -127,7 +127,7 @@ We will firstly  look at parameters specified using the command line when runnin
 
 Lets start by declaring a parameter that is going to be our first argument when running our bash script.
 
-<img src="assets/parameters1.png" alt="Tools" width="300">
+<img src="assets/parameters1.png" width="300">
 
 
 We now run our script with `./example.sh Spindart`
@@ -144,7 +144,7 @@ And it would return <b>"Dart"</b>.
 
 What if we didn't want to supply them like this however, and instead it would let us type in our name in a more interactive way, we can do this using `read`.
 
-<img src="assets/parameters2.png" alt="Tools" width="400">
+<img src="assets/parameters2.png" width="400">
 
 This code will hang after its ran, this gives you the opportunity to type in your name.
 
@@ -153,10 +153,10 @@ And we can see that it worked!
 
 Maybe try making a little biography maker, where you take the name, age, and job as parameters. Store them inside a variable and then output them to the screen inside a sentence. 
 
-<img src="assets/parameters4.png" alt="Tools" width="500">
+<img src="assets/parameters4.png" width="500">
 
 
-<img src="assets/parameters3.png" alt="Tools" width="500">
+<img src="assets/parameters3.png" width="500">
 
 However there is so much more that you can do with parameters and I advice you to play around with them, after all practice is what makes you better! 
 
@@ -164,6 +164,8 @@ However there is so much more that you can do with parameters and I advice you t
 
 
 <b>Check the number of arguments</b>
+
+(you'll see conditionals soon <a href="#conditionals">here</a> )
 
 ```bash
 if [ $# -eq 0 ]; then
@@ -241,3 +243,87 @@ car trainride bike bus
 So we successfully managed to swap out an element in our array!
 
 As a little side project try building on your previous project of a biography maker, include arrays so that you can store multiple names and multiple facts about the person. 
+
+# Conditionals 
+
+<img src="assets/conditionals1.png" width="500">
+
+When we talk about conditionals it means that a certain piece of code relies on a condition being met, this is often determined with relational operators, such as equal to, greater than, and less than.
+
+
+We will make a simple "if" statement to check if a variable is equal to a value, we will also make a script that checks if a file exists and that it is writeable, if it is we will write a message to that file, if not writeable it will delete it and make a new one. A Lot of new things will be taught here so pay attention.
+
+
+First, we will discuss the basic syntax of an if statement.
+
+All if statements look like so:
+
+<img src="assets/conditionals2.png" width="500">
+
+Let's look at an example:
+
+<img src="assets/conditionals3.png" width="500">
+
+
+If statements always use a pair of brackets and in the case of the [] we need to leave a space on both sides of the text(the bash syntax). We also always need to end the `if` statement with `fi`
+
+
+Here a variable is being declared as 10 and in the top line of the if statement the variable $count is being compared to the integer 10.
+
+If they are equal then it outputs true, if its false it outputs false. As we know 10 is equal to 10 so it outputs true.
+
+The -eq is one way of doing this, you could also use <b>“=”</b>
+
+<table><tbody><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#eeeeee;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;text-align:center;margin-top:0pt;margin-bottom:15pt"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap">Operator</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#eeeeee;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;text-align:center;margin-top:0pt;margin-bottom:15pt"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap">Description</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-eq</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >Checks if the value of two operands are equal or not; if yes, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-ne</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >Checks if the value of two operands are equal or not; if values are not equal, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-gt</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >Checks if the value of left operand is greater than the value of right operand; if yes, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-lt</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >Checks if the value of left operand is less than the value of right operand; if yes, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-ge</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >Checks if the value of left operand is greater than or equal to the value of right operand; if yes, then the condition becomes true.</span></p></td></tr></tbody></table>
+
+^^^^^ These are some examples.
+
+
+So now let's use this to make a little script that compares an input(a parameter) and checks it against a value to check if it's true or not. A guessing game if you will.
+
+
+<img src="assets/conditionals4.png" width="500">
+
+
+Now let's test this in our terminal.
+
+`./example.sh guessme`
+
+`"They are equal"`
+
+`./example.sh hi`
+
+`"They are not equal"`
+
+And we can see that it works!
+
+Feel free to play around with these and try making different combinations and using different operators.
+
+
+Now let's create another script where we will use 2 conditions simultaneously and coming back to a concept we learnt in the first lesson.
+
+Let's begin.
+
+We want to make a script that we will perform on a file given by a parameter.
+
+We then check if it exists and if it has write permissions. If it has write perms then we echo “hello” to it. If it is either non-accessible or doesn't exist we will create the file and echo “hello” to it. Let's begin!
+
+<img src="assets/conditionals5.png" width="500">
+
+```bash
+./example.sh hello.txt
+cat hello.txt
+```
+
+<B>hello</B>
+
+And we can see that it worked!!
+
+The `-f` checked if the file existed.
+
+The `-w` checked if the file was writable, without write permissions we wouldn't be able to output our text into the file.
+
+To finish off our little project from the previous task. You can build on your script using an if/else statement. Test to see if the age is under 18, if it is then echo out their name with "You are not eligible for work" or something along these lines, if they are over 18 then ask them for their job, you can do this with `read`.
+
+
+
