@@ -219,9 +219,30 @@ echo "${transport[1]}"
 because the train is at index position 1.
 
 
-The last thing we will cover is if we want to change an element, or delete it. If we wanted to remove an element we would use the <b>unset</b> utility.
+The last thing we will cover is if we want to change an element, or delete it. If we wanted to remove an variable we would use the <b>unset</b> utility.
 ```bash
-unset transport[1]
+unset transport
+```
+
+Unset an specifc element in an array
+
+```bash
+#!/bin/bash
+
+# Declare an array
+transports=('car' 'train' 'bike' 'bus')
+
+# Print the original array
+echo "Original array: ${transports[@]}"
+
+# Specify the index of the element you want to remove
+index_to_remove=1
+
+# Create a new array without the element at the specified index
+new_transports=("${transports[@]:0:index_to_remove}" "${transports[@]:index_to_remove+1}")
+
+# Print the new array
+echo "Array with element at index $index_to_remove removed: ${new_transports[@]}"
 ```
 
 This now removes the train item, if we wanted to we could echo it back out and see that it is indeed gone,
