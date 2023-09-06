@@ -34,7 +34,6 @@ A bash script always starts with the following line of code at the top of the sc
 
 `#!/bin/bash`
 
-
 This is so your shell (whatever type of it) knows that it needs to run your file using bash in the terminal.
 
 Lets get into some basic examples.
@@ -129,7 +128,6 @@ Lets start by declaring a parameter that is going to be our first argument when 
 
 <img src="assets/parameters1.png" width="300">
 
-
 We now run our script with `./example.sh Spindart`
 
 And sure enough we get returned with “Spindart”
@@ -154,7 +152,6 @@ And we can see that it worked!
 Maybe try making a little biography maker, where you take the name, age, and job as parameters. Store them inside a variable and then output them to the screen inside a sentence. 
 
 <img src="assets/parameters4.png" width="500">
-
 
 <img src="assets/parameters3.png" width="500">
 
@@ -195,11 +192,9 @@ All indexes start at <b>position 0</b>
 
 <table><tbody><tr><td>item</td><td>index</td></tr><tr><td>car</td><td>0</td></tr><tr><td>train</td><td>1</td></tr><tr><td>bike</td><td>2</td></tr><tr><td>bus</td><td>3</td></tr></tbody></table>
 
-
 Now we have covered this, let's make an array in bash.
 
 The syntax is as follows.
-
 
 We have the variable name, in our case ‘transport’
 
@@ -250,7 +245,6 @@ As a little side project try building on your previous project of a biography ma
 
 When we talk about conditionals it means that a certain piece of code relies on a condition being met, this is often determined with relational operators, such as equal to, greater than, and less than.
 
-
 We will make a simple "if" statement to check if a variable is equal to a value, we will also make a script that checks if a file exists and that it is writeable, if it is we will write a message to that file, if not writeable it will delete it and make a new one. A Lot of new things will be taught here so pay attention.
 
 
@@ -267,7 +261,6 @@ Let's look at an example:
 
 If statements always use a pair of brackets and in the case of the [] we need to leave a space on both sides of the text(the bash syntax). We also always need to end the `if` statement with `fi`
 
-
 Here a variable is being declared as 10 and in the top line of the if statement the variable $count is being compared to the integer 10.
 
 If they are equal then it outputs true, if its false it outputs false. As we know 10 is equal to 10 so it outputs true.
@@ -278,12 +271,9 @@ The -eq is one way of doing this, you could also use <b>“=”</b>
 
 ^^^^^ These are some examples.
 
-
 So now let's use this to make a little script that compares an input(a parameter) and checks it against a value to check if it's true or not. A guessing game if you will.
 
-
 <img src="assets/conditionals4.png" width="500">
-
 
 Now let's test this in our terminal.
 
@@ -324,6 +314,3 @@ The `-f` checked if the file existed.
 The `-w` checked if the file was writable, without write permissions we wouldn't be able to output our text into the file.
 
 To finish off our little project from the previous task. You can build on your script using an if/else statement. Test to see if the age is under 18, if it is then echo out their name with "You are not eligible for work" or something along these lines, if they are over 18 then ask them for their job, you can do this with `read`.
-
-
-
