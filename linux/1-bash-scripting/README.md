@@ -244,18 +244,6 @@ new_transports=("${transports[@]:0:index_to_remove}" "${transports[@]:index_to_r
 # Print the new array
 echo "Array with element at index $index_to_remove removed: ${new_transports[@]}"
 ```
-
-This now removes the train item, if we wanted to we could echo it back out and see that it is indeed gone,
-
-Now lets set it to something else. We can do:
-```bash
-transport[1]='trainride'
-```
-If we echo the array then we get:
-```bash
-car trainride bike bus
-```
-
 So we successfully managed to swap out an element in our array!
 
 As a little side project try building on your previous project of a biography maker, include arrays so that you can store multiple names and multiple facts about the person. 
