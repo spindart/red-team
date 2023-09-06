@@ -159,3 +159,85 @@ Maybe try making a little biography maker, where you take the name, age, and job
 <img src="assets/parameters3.png" alt="Tools" width="500">
 
 However there is so much more that you can do with parameters and I advice you to play around with them, after all practice is what makes you better! 
+
+ The `$#` symbol you used is often used in bash scripts to represent the number of command-line arguments passed to the script. Here's a simple example of a bash script that uses $# to display the number of arguments:
+
+
+<b>Check the number of arguments</b>
+
+```bash
+if [ $# -eq 0 ]; then
+    echo "No arguments provided."
+elif [ $# -eq 1 ]; then
+    echo "One argument provided."
+else
+    echo "Multiple arguments provided."
+fi
+``` 
+
+with `$0` we can get the name of the file bash.
+
+example `echo $0` print the filename.
+
+# Arrays
+
+For this module i suggest you follow along in the attackbox or a standard linux terminal to make it easier to understand.
+
+Arrays are used to store multiple pieces of data in one variable, which can then be extracted by using an index. Most commonly notated as `var[index_position]`.
+
+Arrays use indexing meaning that each item in an array stands for a number.
+
+In the array `['car', 'train', 'bike', 'bus']` each item has a corresponding index.
+
+All indexes start at <b>position 0</b>
+
+<table><tbody><tr><td>item</td><td>index</td></tr><tr><td>car</td><td>0</td></tr><tr><td>train</td><td>1</td></tr><tr><td>bike</td><td>2</td></tr><tr><td>bus</td><td>3</td></tr></tbody></table>
+
+
+Now we have covered this, let's make an array in bash.
+
+The syntax is as follows.
+
+
+We have the variable name, in our case ‘transport’
+
+We then wrap each item in brackets leaving a space between each item.
+```bash
+transport=('car' 'train' 'bike' 'bus')
+```
+We can then echo out all the elements in our array like this:
+```bash
+echo "${transport[@]}"
+```
+You can try this in your own terminal and see what it outputs.
+
+Where the "@" means all arguments, and the [] wrapped around it specifies its index.
+
+So what if we wanted to print out the item train.
+
+We would simply type:
+```bash
+echo "${transport[1]}"
+```
+because the train is at index position 1.
+
+
+The last thing we will cover is if we want to change an element, or delete it. If we wanted to remove an element we would use the <b>unset</b> utility.
+```bash
+unset transport[1]
+```
+
+This now removes the train item, if we wanted to we could echo it back out and see that it is indeed gone,
+
+Now lets set it to something else. We can do:
+```bash
+transport[1]='trainride'
+```
+If we echo the array then we get:
+```bash
+car trainride bike bus
+```
+
+So we successfully managed to swap out an element in our array!
+
+As a little side project try building on your previous project of a biography maker, include arrays so that you can store multiple names and multiple facts about the person. 
