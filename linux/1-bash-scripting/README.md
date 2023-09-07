@@ -272,11 +272,11 @@ First, we will discuss the basic syntax of an if statement.
 
 All if statements look like so:
 
-<img src="assets/conditionals2.png" width="500">
+<img src="assets/conditionals2.png" width="600">
 
 Let's look at an example:
 
-<img src="assets/conditionals3.png" width="500">
+<img src="assets/conditionals3.png" width="600">
 
 If statements always use a pair of brackets and in the case of the [] we need to leave a space on both sides of the text(the bash syntax). We also always need to end the `if` statement with `fi`
 
