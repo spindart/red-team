@@ -333,3 +333,10 @@ The `-f` checked if the file existed.
 The `-w` checked if the file was writable, without write permissions we wouldn't be able to output our text into the file.
 
 To finish off our little project from the previous task. You can build on your script using an if/else statement. Test to see if the age is under 18, if it is then echo out their name with "You are not eligible for work" or something along these lines, if they are over 18 then ask them for their job, you can do this with `read`.
+
+If you want to further extend your knowledge of bash or coding in general I really suggest the following websites:
+
+https://www.codewars.com/
+https://www.hackerrank.com/
+
+And of course google!
