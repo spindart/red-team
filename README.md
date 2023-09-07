@@ -6,8 +6,6 @@
   <br>
 <img src="./assets/red.png" alt="Tools" width="200">
 </h1>
-
-
 <h4 align="center">A repository with documentations about red team operations, utilities, tools, etc...</h4>
 
 ## Utilities 

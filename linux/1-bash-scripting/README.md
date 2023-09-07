@@ -278,7 +278,6 @@ Let's look at an example:
 
 <img src="assets/conditionals3.png" width="500">
 
-
 If statements always use a pair of brackets and in the case of the [] we need to leave a space on both sides of the text(the bash syntax). We also always need to end the `if` statement with `fi`
 
 Here a variable is being declared as 10 and in the top line of the if statement the variable $count is being compared to the integer 10.
