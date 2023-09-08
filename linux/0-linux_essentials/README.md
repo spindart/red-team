@@ -8,7 +8,6 @@
 The most important command in Linux terminal is <strong><a href="#man">man(ual)</a></strong>, record this! 
 through this command you get the manual to understand commands and how to use them
 
-
 # Interacting With the Filesystem
 
 Basic commands to interact with the filesystem
@@ -252,12 +251,6 @@ applications, this directory is subdivided into bin, sbin, lib according to the 
 
 are specific to the Linux kernel (and are not part of FHS). They are used by the kernel to export data to userspace.
 
-
-
-
-
-
-
 # Terminal text editors
 
 `nano` filename
@@ -306,7 +299,6 @@ Some of VIM's benefits, albeit taking a much longer time to become familiar with
 
 
 <hr>
-
 
 # General/Useful Utilities 
 

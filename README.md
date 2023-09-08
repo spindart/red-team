@@ -16,7 +16,6 @@
   </ul>
 </p>
 
-
 ## Studies Red Team
 <ol>
  <li><a href="./studies/0-personal-security/">Personal security</a> </li>
