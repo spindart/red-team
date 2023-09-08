@@ -289,7 +289,109 @@ The -eq is one way of doing this, you could also use <b>“=”</b>
 <table><tbody><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#eeeeee;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;text-align:center;margin-top:0pt;margin-bottom:15pt"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap">Operator</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#eeeeee;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;text-align:center;margin-top:0pt;margin-bottom:15pt"><span style="font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap">Description</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-eq</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span > <b>==</b> Checks if the value of two operands are equal or not; if yes, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-ne</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span > <b>!=</b> Checks if the value of two operands are equal or not; if values are not equal, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-gt</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span ><b>></b> Checks if the value of left operand is greater than the value of right operand; if yes, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-lt</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span> <b><</b> Checks if the value of left operand is less than the value of right operand; if yes, then the condition becomes true.</span></p></td></tr><tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-ge</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span> <b>>=</b> Checks if the value of left operand is greater than or equal to the value of right operand; if yes, then the condition becomes true.</span></p></td></tr>
 <tr><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span >-le</span></p></td><td style="border-left:solid #dddddd 0.75pt;border-right:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;padding:6pt 6pt 6pt 6pt;overflow:hidden;overflow-wrap:break-word"><p style="line-height:1.714284;margin-top:0pt;margin-bottom:15pt"><span> <b><=</b> Checks if the value of left operand is less than or equal to the value of right operand; if yes, then the condition becomes true.</span></p></td></tr></tbody></table>
 
-^^^^^ These are some examples.
+<table border="1">
+<tbody>
+<tr>
+<td width="50">=</td>
+<td width="200">equal</td>
+</tr>
+<tr>
+<td width="50">!=</td>
+<td width="50">not equal</td>
+</tr>
+<tr>
+<td width="50">&lt;</td>
+<td width="50">less then</td>
+</tr>
+<tr>
+<td width="50">&gt;</td>
+<td width="50">greater then</td>
+</tr>
+<tr>
+<td width="50">-n s1</td>
+<td width="50">string s1 is not empty</td>
+</tr>
+<tr>
+<td width="50">-z s1</td>
+<td width="50">string s1 is empty</td>
+</tr>
+</tbody>
+</table>
+
+<table border="0">
+<tbody>
+<tr>
+<td width="140">-b filename</td>
+<td width="500">Block special file</td>
+</tr>
+<tr>
+<td width="100">-c filename</td>
+<td width="300">Special character file</td>
+</tr>
+<tr>
+<td width="100">-d directoryname</td>
+<td width="300">Check for directory existence</td>
+</tr>
+<tr>
+<td width="100">-e filename</td>
+<td width="300">Check for file existence</td>
+</tr>
+<tr>
+<td width="100">-f filename</td>
+<td width="300">Check for regular file existence not a directory</td>
+</tr>
+<tr>
+<td width="100">-G filename</td>
+<td width="300">Check if file exists and is owned by effective group ID.</td>
+</tr>
+<tr>
+<td width="100">-g filename</td>
+<td width="300">true if file exists and is set-group-id.</td>
+</tr>
+<tr>
+<td width="100">-k filename</td>
+<td width="300">Sticky bit</td>
+</tr>
+<tr>
+<td width="100">-L filename</td>
+<td width="300">Symbolic link</td>
+</tr>
+<tr>
+<td width="100">-O filename</td>
+<td width="300">True if file exists and is owned by the effective user id.</td>
+</tr>
+<tr>
+<td width="100">-r filename</td>
+<td width="300">Check if file is a readable</td>
+</tr>
+<tr>
+<td width="100">-S filename</td>
+<td width="300">Check if file is socket</td>
+</tr>
+<tr>
+<td width="100">-s filename</td>
+<td width="300">Check if file is nonzero size</td>
+</tr>
+<tr>
+<td width="100">-u filename</td>
+<td width="300">Check if file set-ser-id bit is set</td>
+</tr>
+<tr>
+<td width="100">-w filename</td>
+<td width="300">Check if file is writable</td>
+</tr>
+<tr>
+<td width="100">-x filename</td>
+<td width="300">Check if file is executable</td>
+</tr>
+</tbody>
+</table>
+
+# Bash Scripting: Boolean Operators
+
+Boolean operators include and `&&`, or `||` and not equal to `!`. These operators allow us to test if two or more conditions are true or not.
+
+
 
 So now let's use this to make a little script that compares an input(a parameter) and checks it against a value to check if it's true or not. A guessing game if you will.
 
@@ -341,3 +443,9 @@ https://www.codewars.com/
 https://www.hackerrank.com/
 
 And of course google!
+
+# References
+
+https://linuxconfig.org/bash-scripting-operators
+
+https://tryhackme.com/room/bashscripting
