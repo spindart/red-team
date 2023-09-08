@@ -390,7 +390,8 @@ The -eq is one way of doing this, you could also use <b>“=”</b>
 # Bash Scripting: Boolean Operators
 
 Boolean operators include and `&&`, or `||` and not equal to `!`. These operators allow us to test if two or more conditions are true or not.
-
+<hr>
+<br><br>
 
 
 So now let's use this to make a little script that compares an input(a parameter) and checks it against a value to check if it's true or not. A guessing game if you will.
