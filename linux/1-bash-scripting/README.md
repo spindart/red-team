@@ -412,7 +412,6 @@ And we can see that it works!
 
 Feel free to play around with these and try making different combinations and using different operators.
 
-
 Now let's create another script where we will use 2 conditions simultaneously and coming back to a concept we learnt in the first lesson.
 
 Let's begin.
