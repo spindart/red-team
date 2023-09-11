@@ -1,7 +1,7 @@
 <h1 align="center">
 <br>
-  Linux Essentials
-  <br>
+Linux Essentials
+<br>
 <img src="./assets/linux.png" alt="Tools" width="200">
 </h1>
 
@@ -108,7 +108,6 @@ ssh username_account@MACHINE_IP
 
 # Permissions 101
 
-
 Using ls -lh to list the permissions of all files in the directory
 
 <b>exampĺe ls -l to show permissions of file, user and group</b>
@@ -184,7 +183,6 @@ Unlike the /home directory, the /root folder is actually the home for the "root"
 root@linux2:~# ls
 myfile myfolder passwords.xlsx
 ```
-        
 
 <b>/tmp</b>
 This is a unique root directory found on a Linux install. Short for <b>"temporary"</b>, the /tmp directory is volatile and is used to store data that is only needed to be accessed once or twice. Similar to the memory on your computer, once the computer is restarted, the contents of this folder are cleared out.
@@ -1059,12 +1057,12 @@ Each page of the manual is divided into parts:
 `<b>
 <ul>
 <li>NAME: Name of the item searched for with a short description;</li><li>SYNOPSIS: Full description of usage and syntax;</li>
- <li>DESCRIPTION: Brief description of the features; </li>
- <li>OPTIONS: Description of each option and arguments; </li>
- <li>FILES: A list of important files;</li>
-  <li>SEE ALSO: A list of items related to the wanted person; </li>
-  <li>BUGS: Description of possible problems with the item; </li>
-  <li>AUTHOR: List of people responsible for the item.</li>
+<li>DESCRIPTION: Brief description of the features; </li>
+<li>OPTIONS: Description of each option and arguments; </li>
+<li>FILES: A list of important files;</li>
+<li>SEE ALSO: A list of items related to the wanted person; </li>
+<li>BUGS: Description of possible problems with the item; </li>
+<li>AUTHOR: List of people responsible for the item.</li>
 </ul>
 </b>
 
@@ -1323,7 +1321,6 @@ whoami is a Unix command that allows you to show the current user of the system,
 
 See distros Linux in https://distrowatch.com/
 
-
 # Resume fundamentals commands linux
 
 <b>File and Directory Operations:</b>
@@ -1394,7 +1391,6 @@ File Compression and Archiving:
  - ssh: Secure Shell for remote access.
 
 These are just some of the fundamental Linux commands. Linux offers a wide range of utilities and tools for system administration, development, and various other tasks. You can explore more by using the man command followed by the command name to access the manual pages and learn about their usage and options. For example, man ls provides information about the ls command.
-
 
 ## References
 
