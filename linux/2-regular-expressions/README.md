@@ -17,6 +17,11 @@ There's no machine to deploy. There are two ways to test your expressions. Eithe
 * create a text file with some test paragraphs (in a Unix machine) and then use egrep <pattern> <file> to see what matches and what doesn't, or
 * use an online editor like https://regexr.com/. You can add your own text in the "Text" field, and then type your expressions (patterns) in the "Expression" field.
 
+Another editors: 
+
+https://regex101.com/
+
+
 # Charsets
 
 When searching for a specific string in a file or block of text, you can search for it as is, with `grep 'string' <file>` . But what happens if you want to search for patterns of text? For example, you could be looking for a word that starts with a specific letter, or any words that end with numbers. That's where Regular Expressions come in.
