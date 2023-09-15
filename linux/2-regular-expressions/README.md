@@ -57,3 +57,13 @@ Note 2: When specifying charsets, you should type the letters in the same order 
 Note 3: Answering some of these questions is going to be tricky. Often times there are many different patterns that match specific strings. That means (as stated in the previous note) that you may find a proper solution that isn't the right answer for this room (because there can only be one). The right answer is typically the most efficient regex for that question. Efficient in this context means 2 things:
 *  Be specific. Here's an example: you could match any character from a to c using the `[a-z]` charset. But if the question only requires you to match characters from `a` to /`c`, you should use the `[a-c]` charset, not `[a-z]`.
 * Don't be too specific. In contrast to the previous example, if a question requires you to match `a, c, f, r, s, z`, at that point, the expression that matches those specific characters would get longer and more complicated. So, it would make more sense to use `[a-z]`, because it is short and simple.
+
+# Wildcards and optional characters 
+
+
+
+The wildcard that is used to match any single character (except the line break) is the `.` dot. That means that `a.c` will match `aac`, `abc`, `a0c`, `a!c`, and so on.
+
+Also, you can set a character as optional in your pattern using the `?` question mark. That means that `abc?` will match `ab` and `abc`, since the `c` is optional.
+
+Note: If you want to search for `.` a literal dot, you have to escape it with a `\` reverse slash. That means that `a.c` will match `a.c`, but also `abc`, `a@c`, and so on. But `a\.c` will match just `a.c`.
