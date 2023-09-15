@@ -21,7 +21,6 @@ Another editors:
 
 https://regex101.com/
 
-
 # Charsets
 
 When searching for a specific string in a file or block of text, you can search for it as is, with `grep 'string' <file>` . But what happens if you want to search for patterns of text? For example, you could be looking for a word that starts with a specific letter, or any words that end with numbers. That's where Regular Expressions come in.
@@ -59,8 +58,6 @@ Note 3: Answering some of these questions is going to be tricky. Often times the
 * Don't be too specific. In contrast to the previous example, if a question requires you to match `a, c, f, r, s, z`, at that point, the expression that matches those specific characters would get longer and more complicated. So, it would make more sense to use `[a-z]`, because it is short and simple.
 
 # Wildcards and optional characters 
-
-
 
 The wildcard that is used to match any single character (except the line break) is the `.` dot. That means that `a.c` will match `aac`, `abc`, `a0c`, `a!c`, and so on.
 
