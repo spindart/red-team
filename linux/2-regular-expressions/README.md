@@ -98,3 +98,22 @@ Here's a reference for each repetition along with how many times it matches the 
 `*` - 0 or more times.
 
 `+` - 1 or more times.
+
+# Starts with/ ends with, groups, and either/ or 
+
+
+
+Sometimes it's very useful to specify that we want to search by a certain pattern in the beginning or the end of a line. We do that with these characters:
+`^` - starts with
+`$` - ends with
+
+So for example, if you want to search for a line that starts with `abc`, you can use `^abc`.
+
+If you want to search for a line that ends with `xyz`, you can use `xyz$`.
+
+Note: The `^` hat symbol is used to exclude a charset when enclosed in `[`square brackets`]`, but when it is not, it is used to specify the beginning of a word.
+
+You can also define groups by enclosing a pattern in `(`parentheses`)`. This function can be used for many ways that are not in the scope of this tutorial. We will use it to define an either/ or pattern, and also to repeat patterns. To say "or" in Regex, we use the `|` pipe.
+
+For an "either/or" pattern example, the pattern `during the (day|night)` will match both of these sentences: `during the day` and `during the night`.
+For a repetition example, the pattern `(no){5}` will match the sentence `nonononono`.
