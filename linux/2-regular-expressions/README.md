@@ -117,3 +117,7 @@ You can also define groups by enclosing a pattern in `(`parentheses`)`. This fun
 
 For an "either/or" pattern example, the pattern `during the (day|night)` will match both of these sentences: `during the day` and `during the night`.
 For a repetition example, the pattern `(no){5}` will match the sentence `nonononono`.
+
+# Credits and references
+
+http://www.tryhackme.com
