@@ -121,3 +121,51 @@ Bcrypt (Blowfish Crypt):
 * No built-in salt generation or work factor: SHA-512 does not provide automatic salt generation, and it doesn't include a built-in mechanism for increasing the computational cost, which is crucial for password security.
 
 <b>In summary, if you're storing passwords in a database, it is highly recommended to use bcrypt over SHA-512 or other cryptographic hash functions. Bcrypt's slowness, salt generation, and protection against rainbow table attacks make it the right choice for securely hashing passwords. Additionally, as hardware improves over time, you can increase the cost factor to maintain security against evolving threats. Always use a well-established password hashing library or implementation in your programming language to ensure best practices in password security.</b>
+
+# How do you catch Ransomware?
+
+<b style="color:red;"> NO DOWNLOAD PIRATE GAMES, SOFTWARES, ETC</b>
+Catching ransomware, or preventing it from infecting your systems in the first place, is crucial for safeguarding your data and avoiding the potentially devastating consequences of an attack. Here are some steps and strategies to help catch and mitigate ransomware:
+
+    Implement Strong Security Practices:
+        Keep your operating system and all software up to date with the latest security patches.
+        Use reputable antivirus and anti-malware software and keep it updated.
+        Employ a firewall to monitor and filter network traffic.
+        Ensure that your network infrastructure and security policies are robust and up to date.
+
+    User Training and Awareness:
+        Train employees and users to recognize phishing attempts and suspicious emails. Most ransomware infections start with a phishing email.
+        Educate users about safe web browsing practices and the risks of downloading or opening files from untrusted sources.
+
+    Email Filtering and Web Filtering:
+        Implement email filtering solutions to block malicious attachments and links in emails.
+        Use web filtering tools to prevent access to known malicious websites and content.
+
+    Backup Regularly:
+        Maintain regular backups of your critical data, and ensure they are stored offline or in a separate, isolated network. Regular backups can help you recover your data without paying a ransom.
+
+    Segment Your Network:
+        Divide your network into segments, and limit access based on the principle of least privilege. This can help contain the spread of ransomware if one part of your network gets infected.
+
+    Use Intrusion Detection and Prevention Systems (IDPS):
+        Implement IDPS solutions that can detect and block malicious activity in real-time. These systems can help identify ransomware-related activity and take action to stop it.
+
+    Implement Behavior-Based Detection:
+        Utilize security software that can identify ransomware by monitoring system behavior for unusual or malicious activities, such as file encryption attempts.
+
+    Monitor Network Traffic and Logs:
+        Regularly review logs and monitor network traffic for suspicious activity. Unusual patterns or unexpected changes in network behavior can be indicators of a ransomware attack.
+
+    Isolate and Quarantine Infected Systems:
+        If you suspect a system has been infected, isolate it from the network immediately to prevent the ransomware from spreading. You can then investigate and remediate the infection.
+
+    Incident Response Plan:
+        Develop a comprehensive incident response plan that outlines how to handle a ransomware attack. Ensure that your team is trained and ready to execute the plan if needed.
+
+    Engage Law Enforcement:
+        If you become a victim of ransomware, consider reporting the incident to law enforcement agencies. While they may not be able to recover your data, they can investigate and potentially take action against the perpetrators.
+
+    Backup Decryption Keys:
+        Some ransomware strains are decryptable if you have the decryption keys. Security organizations and law enforcement sometimes release decryption tools for specific ransomware variants. Check online resources for decryption options.
+
+Remember that ransomware attacks can be highly sophisticated, and prevention is often more effective than trying to catch it after infection. A proactive approach to cybersecurity, combined with user education and regular backups, is your best defense against ransomware.
