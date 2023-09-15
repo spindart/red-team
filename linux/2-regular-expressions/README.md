@@ -64,3 +64,37 @@ The wildcard that is used to match any single character (except the line break) 
 Also, you can set a character as optional in your pattern using the `?` question mark. That means that `abc?` will match `ab` and `abc`, since the `c` is optional.
 
 Note: If you want to search for `.` a literal dot, you have to escape it with a `\` reverse slash. That means that `a.c` will match `a.c`, but also `abc`, `a@c`, and so on. But `a\.c` will match just `a.c`.
+
+# Metacharacters and repetitions 
+
+
+
+There are easier ways to match bigger charsets. For example, \d is used to match any single digit. Here's a reference:
+
+`\d` matches a digit, like `9`
+
+`\D` matches a non-digit, like `A` or `@`
+
+`\w` matches an alphanumeric character, like `a` or `3`
+
+`\W` matches a non-alphanumeric character, like `!` or `#`
+
+`\s` matches a whitespace character (spaces, tabs, and line breaks)
+
+`\S` matches everything else (alphanumeric characters and symbols)
+
+Note: Underscores `_` are included in the `\w` metacharacter and not in `\W`. That means that `\w` will match every single character in `test_file`.
+
+Often we want a pattern that matches many characters of a single type in a row, and we can do that with repetitions. For example, `{2}` is used to match the preceding character (or metacharacter, or charset) two times in a row. That means that `z{2}` will match exactly `zz`.
+
+Here's a reference for each repetition along with how many times it matches the preceding pattern:
+
+`{12}` - exactly 12 times.
+
+`{1,5}` - 1 to 5 times.
+
+`{2,}` - 2 or more times.
+
+`*` - 0 or more times.
+
+`+` - 1 or more times.
