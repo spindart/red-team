@@ -106,16 +106,18 @@ While SMS is an ideal solution for 2FA adoption and ease of use, TOTP has severa
 
 Storing passwords in a database securely is crucial for protecting user accounts and sensitive information. When it comes to choosing a password hashing algorithm, bcrypt and SHA-512 are two commonly discussed options. However, they serve different purposes and have different characteristics.
 
-    Bcrypt (Blowfish Crypt):
-        Bcrypt is a password hashing algorithm designed specifically for securely hashing passwords. It's considered one of the best choices for this purpose due to its key features:
-            Slowness: Bcrypt is deliberately slow, which makes it resistant to brute-force and dictionary attacks. The slowness factor can be adjusted with the "cost" parameter, making it adaptable to future hardware improvements.
-            Salt generation: Bcrypt automatically generates a random salt for each password, ensuring that identical passwords result in different hash values.
-            Built-in security against rainbow table attacks: Bcrypt uses the salt to defend against rainbow table attacks, where precomputed hash values for common passwords are used to quickly find matches.
-        Bcrypt is the preferred choice for password storage because it is specifically designed to address the security challenges of storing passwords.
+Bcrypt (Blowfish Crypt):
+* Bcrypt is a password hashing algorithm designed specifically for securely hashing passwords. It's considered one of the best choices for this purpose due to its key features:
+* Slowness: Bcrypt is deliberately slow, which makes it resistant to brute-force and dictionary attacks. The slowness factor can be adjusted with the "cost" parameter, making it adaptable to future hardware improvements.
+* <b>Salt generation: Bcrypt automatically generates a random salt for each password, ensuring that identical passwords result in different hash values.</b>
+* Built-in security against rainbow table attacks: Bcrypt uses the salt to defend against rainbow table attacks, where precomputed hash values for common passwords are used to quickly find matches.
+* <b>Bcrypt is the preferred choice for password storage because it is specifically designed to address the security challenges of storing passwords.</b>
+<hr>
 
-    SHA-512 (Secure Hash Algorithm 512-bit):
-        SHA-512 is a cryptographic hash function designed for a different purpose, namely data integrity and security, rather than password hashing. It's a fast and secure hash function, but it lacks the key features necessary for secure password storage:
-            Speed: SHA-512 is designed to be fast and efficient, which is not ideal for password hashing because it makes brute-force attacks more viable.
-            No built-in salt generation or work factor: SHA-512 does not provide automatic salt generation, and it doesn't include a built-in mechanism for increasing the computational cost, which is crucial for password security.
+ SHA-512 (Secure Hash Algorithm 512-bit):
 
-In summary, if you're storing passwords in a database, it is highly recommended to use bcrypt over SHA-512 or other cryptographic hash functions. Bcrypt's slowness, salt generation, and protection against rainbow table attacks make it the right choice for securely hashing passwords. Additionally, as hardware improves over time, you can increase the cost factor to maintain security against evolving threats. Always use a well-established password hashing library or implementation in your programming language to ensure best practices in password security.
+* SHA-512 is a cryptographic hash function designed for a different purpose, namely data integrity and security, rather than password hashing. It's a fast and secure hash function, but it lacks the key features necessary for secure password storage:
+* Speed: SHA-512 is designed to be fast and efficient, which is not ideal for password hashing because it makes brute-force attacks more viable.
+* No built-in salt generation or work factor: SHA-512 does not provide automatic salt generation, and it doesn't include a built-in mechanism for increasing the computational cost, which is crucial for password security.
+
+<b>In summary, if you're storing passwords in a database, it is highly recommended to use bcrypt over SHA-512 or other cryptographic hash functions. Bcrypt's slowness, salt generation, and protection against rainbow table attacks make it the right choice for securely hashing passwords. Additionally, as hardware improves over time, you can increase the cost factor to maintain security against evolving threats. Always use a well-established password hashing library or implementation in your programming language to ensure best practices in password security.</b>
