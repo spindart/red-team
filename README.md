@@ -26,4 +26,3 @@
  <li><a href="./linux/1-bash-scripting/">Bash Scripting</a> </li>
  <li><a href="./linux/2-regular-expressions/">Regular Expressions</a> </li>
 </ol>
-
