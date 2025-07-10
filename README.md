@@ -19,7 +19,6 @@
  <li><a href="./studies/0-personal-security/">Personal security</a> </li>
  <li><a href="./studies/1-engagements/">Red Team Engagements</a> </li>
 </ol>
-
 ## Linux
 <ol>
  <li><a href="./linux/0-linux_essentials/">Linux Essentials</a> </li>
